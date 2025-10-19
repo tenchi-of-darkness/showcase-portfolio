@@ -5,11 +5,26 @@ export default function Home() {
 
     return (
         <div className={"flex flex-col mt-10 overflow-y-scroll h-[calc(100lvh-40px)] snap-y"}>
-            <section id={"melanie"} className={cn(sectionClassName, "snap-start bg-red-100")}>
-                Melanie
+            <section id={"melanie"} className={cn(sectionClassName, "snap-start bg-gray-200")}>
+                <p className={"bg-purple-100 w-fit p-1 mt-10 mb-10"} style={{borderRadius: '15px'}} >Available for opportunities</p>
+                <h2 className={"font-bold text-5xl mb-2"}>Hi, I'm Melanie</h2>
+                <p className={"font-bold text-gray-500 mb-5 text-2xl"}>Fun facts/ Inspirational quote</p>
+                <p className={" outline outline-2 outline-purple-500"} style={{borderRadius: '15px'}}>Cras vel augue rhoncus, imperdiet libero eu, viverra ligula. Vestibulum  ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia  curae; Vivamus malesuada ex dui. Phasellus augue urna, aliquet in  placerat eu, molestie at neque. Quisque tincidunt porta mauris ut  dictum. Mauris lorem
+                    mi, commodo vitae sem at</p>
+                    <button className={"bg-purple-600 mt-5 text-white p-1"} style={{borderRadius: '15px'}} >View my projects</button>
             </section>
+
             <section id={"about"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
-                About
+                <h2 className={"font-bold text-5xl text-center mb-1"}>About me</h2>
+                <p className={"text-purple-400 text-center"}>Get to know me</p>
+                <div className="flex justify-between">
+                    <p className={"font-bold text-2xl text-center mb-1 text-left"}>My Story</p>
+                    <p className={"font-bold text-2xl text-center mb-1 text-left"}>Hobbies and interests</p>
+                </div>
+                <div>
+
+                </div>
+
             </section>
             <section id={"skills"} className={cn(sectionClassName, "snap-start bg-red-100")}>
                 Skills
