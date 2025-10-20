@@ -46,7 +46,24 @@ export default function Home() {
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
-                                        Enter your email below to login to your account
+                                        This is a project description
+                                    </CardDescription>
+                                </CardHeader>
+                                <CardContent>
+                                    This is the card content
+                                </CardContent>
+                                <CardFooter>
+                                    <button variant="outline" className="w-full">
+                                        Go to project
+                                    </button>
+                                </CardFooter>
+                            </Card>
+
+                            <Card>
+                                <CardHeader>
+                                    <CardTitle>Project name</CardTitle>
+                                    <CardDescription>
+                                        This is a project description
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -63,7 +80,7 @@ export default function Home() {
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
-                                        Enter your email below to login to your account
+                                        This is a project description
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -80,7 +97,7 @@ export default function Home() {
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
-                                        Enter your email below to login to your account
+                                        This is a project description
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -97,7 +114,7 @@ export default function Home() {
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
-                                        Enter your email below to login to your account
+                                        This is a project description
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -114,24 +131,7 @@ export default function Home() {
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
-                                        Enter your email below to login to your account
-                                    </CardDescription>
-                                </CardHeader>
-                                <CardContent>
-                                    This is the card content
-                                </CardContent>
-                                <CardFooter className="flex-col gap-2">
-                                    <button variant="outline" className="w-full">
-                                        Go to project
-                                    </button>
-                                </CardFooter>
-                            </Card>
-
-                            <Card>
-                                <CardHeader>
-                                    <CardTitle>Project name</CardTitle>
-                                    <CardDescription>
-                                        Enter your email below to login to your account
+                                        This is a project description
                                     </CardDescription>
                                 </CardHeader>
                                 <CardContent>
@@ -150,7 +150,22 @@ export default function Home() {
 
             <section id={"skills"} className={cn(sectionClassName, "snap-start bg-red-100")}>
                 <h2 className={"font-bold text-5xl text-center mb-1"}> Skills</h2>
-                <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full">
+                <div className="grid grid-cols-3 grid-rows-3 gap-4">
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
+
 
                 </div>
             </section>
