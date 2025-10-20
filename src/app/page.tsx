@@ -244,6 +244,10 @@ export default function Home() {
                 </div>
             </section>
 
+            <section id={"proficiencies"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
+                Proficiencies
+            </section>
+
             <section id={"projects"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
                 Projects
             </section>

@@ -56,6 +56,12 @@ export default function RootLayout({children}: Readonly<{
 
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+                        <Link href="/#proficiencies">Proficiencies</Link>
+                    </NavigationMenuLink>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
+                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                         <Link href="/#projects">Projects</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
