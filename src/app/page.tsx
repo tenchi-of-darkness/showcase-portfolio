@@ -166,6 +166,80 @@ export default function Home() {
                         </CardFooter>
                     </Card>
 
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
+
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
+
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
+
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
+
+                    <Card className="h-full w-full">
+                        <CardHeader>
+                            <CardTitle>Skill name</CardTitle>
+                            <CardDescription>
+                                This is a awesome skill description
+                            </CardDescription>
+                        </CardHeader>
+                        <CardContent>
+                            icon or picture of skill
+                        </CardContent>
+                        <CardFooter>
+                            A badge or tag with hover for more info
+                        </CardFooter>
+                    </Card>
 
                 </div>
             </section>
