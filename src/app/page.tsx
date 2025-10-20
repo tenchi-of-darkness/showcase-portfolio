@@ -245,7 +245,21 @@ export default function Home() {
             </section>
 
             <section id={"proficiencies"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
-                Proficiencies
+                <h2 className={"font-bold text-5xl text-center mb-1"}> Proficiencies</h2>
+                <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with technologies</p>
+                <div className="grid grid-cols-2 grid-rows-5 gap-10">
+                    <p>C#</p>
+                    <p>Skill</p>
+                    <p>Javascript</p>
+                    <p>Skill</p>
+                    <p>TypeScript</p>
+                    <p>Skill</p>
+                    <p>Azurecloud</p>
+                    <p>Skill</p>
+                    <p>Devops</p>
+                    <p>Skill</p>
+                </div>
+
             </section>
 
             <section id={"projects"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
