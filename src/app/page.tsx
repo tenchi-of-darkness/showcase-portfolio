@@ -41,8 +41,8 @@ export default function Home() {
 
                     <div className="w-1/2 flex flex-col">
                         <p className={"font-bold text-2xl text-center mb-1"}>Hobbies and interests</p>
-                        <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full">
-                            <Card className="w-full h-full flex flex-col">
+                        <div className="grid grid-cols-2 grid-rows-3 gap-4">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -59,7 +59,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
 
-                            <Card className="w-full max-w-sm">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -76,7 +76,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
 
-                            <Card className="w-full max-w-sm">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -93,7 +93,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
 
-                            <Card className="w-full max-w-sm">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -110,7 +110,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
 
-                            <Card className="w-full max-w-sm">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -127,7 +127,7 @@ export default function Home() {
                                 </CardFooter>
                             </Card>
 
-                            <Card className="w-full max-w-sm">
+                            <Card>
                                 <CardHeader>
                                     <CardTitle>Project name</CardTitle>
                                     <CardDescription>
@@ -149,7 +149,10 @@ export default function Home() {
             </section>
 
             <section id={"skills"} className={cn(sectionClassName, "snap-start bg-red-100")}>
-                Skills
+                <h2 className={"font-bold text-5xl text-center mb-1"}> Skills</h2>
+                <div className="grid grid-cols-2 grid-rows-3 gap-4 h-full">
+
+                </div>
             </section>
 
             <section id={"projects"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
