@@ -51,7 +51,8 @@ export default function Home() {
                             {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
                             <HobbyCard hobbyName={"Listen music"} hobbyTags={["D&B", "Raw", "EDM", "Metal"]}
                                        hobbyId={""} hobbyIcon={"icon-[arcticons--vibe-music]"}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={["Thriller", "Sci-fi", "Fantacy", "Horror"]}
+                                       hobbyId={""} hobbyIcon={"icon-[arcticons--cool-reader]"}/>
                             <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
                             <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
                             <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
