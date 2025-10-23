@@ -14,7 +14,7 @@ export function ProjectCard(props: {
             </CardDescription>
         </CardHeader>
         <CardFooter>
-            <Button variant="outline" className="w-full">
+            <Button variant="project" className="w-full">
                 Go to hobby
             </Button>
         </CardFooter>

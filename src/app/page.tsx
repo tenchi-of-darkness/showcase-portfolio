@@ -9,8 +9,9 @@ export default function Home() {
     return (
         <div className={"flex flex-col mt-10 overflow-y-scroll h-[calc(100lvh-40px)] snap-y snap-proximity"}>
             <section id={"melanie"} className={cn(sectionClassName, "snap-start")}>
-                <p className={"bg-purple-100 w-fit p-1 mt-10 mb-10"} style={{borderRadius: '15px'}}>Available for
-                    opportunities</p>
+                <p className={"bg-tag text-tag-foreground w-fit p-1 mt-10 mb-10"}
+                   style={{borderRadius: '15px'}}>
+                    Available for opportunities</p>
                 <h2 className={"font-bold text-5xl mb-2"}>Hi, I'm Melanie</h2>
                 <p className={"font-bold text-gray-500 mb-5 text-2xl"}>Fun facts/ Inspirational quote</p>
                 <p className={" outline outline-2 outline-purple-500"} style={{borderRadius: '15px'}}>Cras vel augue
@@ -46,17 +47,15 @@ export default function Home() {
 
                     <div className="w-1/2 flex flex-col">
                         <p className={"font-bold text-2xl text-center mb-1"}>Hobbies and interests</p>
-                        <div className="grid grid-cols-2 grid-rows-3 gap-4">
+                        <div className="grid grid-cols-2 grid-rows-3 gap-2">
                             {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
-
-                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
-                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
+                            <HobbyCard hobbyName={"Listen music"} hobbyTags={["D&B", "Raw", "EDM", "Metal"]}
+                                       hobbyId={""} hobbyIcon={"icon-[arcticons--vibe-music]"}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
                         </div>
                     </div>
                 </div>
