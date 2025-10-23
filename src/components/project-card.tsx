@@ -14,8 +14,8 @@ export function ProjectCard(props: {
             </CardDescription>
         </CardHeader>
         <CardFooter>
-            <Button variant="project" className="w-full">
-                Go to project
+            <Button variant="outline" className="w-full">
+                Go to hobby
             </Button>
         </CardFooter>
     </Card>;

@@ -1,13 +1,14 @@
 import {cn} from "@/lib/utils";
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle,} from "@/components/ui/card"
 import {ProjectCard} from "@/components/project-card";
+import {HobbyCard} from "@/components/hobby-card";
 
 export default function Home() {
     const sectionClassName = "min-h-[calc(100lvh-40px)]"
 
     return (
         <div className={"flex flex-col mt-10 overflow-y-scroll h-[calc(100lvh-40px)] snap-y snap-proximity"}>
-            <section id={"melanie"} className={cn(sectionClassName, "snap-start bg-gray-200")}>
+            <section id={"melanie"} className={cn(sectionClassName, "snap-start")}>
                 <p className={"bg-purple-100 w-fit p-1 mt-10 mb-10"} style={{borderRadius: '15px'}}>Available for
                     opportunities</p>
                 <h2 className={"font-bold text-5xl mb-2"}>Hi, I'm Melanie</h2>
@@ -24,7 +25,7 @@ export default function Home() {
                 </button>
             </section>
 
-            <section id={"about"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
+            <section id={"about"} className={cn(sectionClassName, "snap-start")}>
                 <h2 className={"font-bold text-5xl text-center mb-1"}>About me</h2>
                 <p className={"text-purple-400 text-center"}>Get to know me</p>
 
@@ -46,18 +47,22 @@ export default function Home() {
                     <div className="w-1/2 flex flex-col">
                         <p className={"font-bold text-2xl text-center mb-1"}>Hobbies and interests</p>
                         <div className="grid grid-cols-2 grid-rows-3 gap-4">
+                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
                             <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
                             <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
                             <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
-                            <ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
+                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""}/>
+
+                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
+                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id={"skills"} className={cn(sectionClassName, "snap-start bg-red-100")}>
+            <section id={"skills"} className={cn(sectionClassName, "snap-start")}>
                 <h2 className={"font-bold text-5xl text-center mb-1"}> Skills</h2>
                 <div className="grid grid-cols-3 grid-rows-3 gap-4">
                     <Card className="h-full w-full">
@@ -153,7 +158,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id={"proficiencies"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
+            <section id={"proficiencies"} className={cn(sectionClassName, "snap-start")}>
                 <h2 className={"font-bold text-5xl text-center mb-1"}> Proficiencies</h2>
                 <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with
                     technologies</p>
@@ -172,15 +177,15 @@ export default function Home() {
 
             </section>
 
-            <section id={"projects"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
+            <section id={"projects"} className={cn(sectionClassName, "snap-start")}>
                 Projects
             </section>
 
-            <section id={"experience"} className={cn(sectionClassName, "snap-start bg-red-100")}>
+            <section id={"experience"} className={cn(sectionClassName, "snap-start")}>
                 Experience
             </section>
 
-            <section id={"contact"} className={cn(sectionClassName, "snap-start bg-blue-100")}>
+            <section id={"contact"} className={cn(sectionClassName, "snap-start")}>
                 Contact
             </section>
 
