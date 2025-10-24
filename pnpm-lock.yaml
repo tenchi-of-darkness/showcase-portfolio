@@ -45,6 +45,9 @@ importers:
       '@iconify/json':
         specifier: ^2.2.397
         version: 2.2.397
+      '@iconify/react':
+        specifier: ^6.0.2
+        version: 6.0.2(react@19.2.0)
       '@iconify/tailwind4':
         specifier: ^1.0.6
         version: 1.0.6(tailwindcss@4.1.14)
@@ -153,6 +156,11 @@ packages:
 
   '@iconify/json@2.2.397':
     resolution: {integrity: sha512-osoLxaGe85Vxec/fGOlx3NwKzdN3JWH8fNITn4o4P+i2UBYGMJTDGSjgl6CIM0OX50IAAFz5jYQebtxInsRnSQ==}
+
+  '@iconify/react@6.0.2':
+    resolution: {integrity: sha512-SMmC2sactfpJD427WJEDN6PMyznTFMhByK9yLW0gOTtnjzzbsi/Ke/XqsumsavFPwNiXs8jSiYeZTmLCLwO+Fg==}
+    peerDependencies:
+      react: '>=16'
 
   '@iconify/tailwind4@1.0.6':
     resolution: {integrity: sha512-43ZXe+bC7CuE2LCgROdqbQeFYJi/J7L/k1UpSy8KDQlWVsWxPzLSWbWhlJx4uRYLOh1NRyw02YlDOgzBOFNd+A==}
@@ -2176,6 +2184,11 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
+
+  '@iconify/react@6.0.2(react@19.2.0)':
+    dependencies:
+      '@iconify/types': 2.0.0
+      react: 19.2.0
 
   '@iconify/tailwind4@1.0.6(tailwindcss@4.1.14)':
     dependencies:

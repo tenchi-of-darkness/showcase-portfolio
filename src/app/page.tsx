@@ -2,6 +2,7 @@ import {cn} from "@/lib/utils";
 import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle,} from "@/components/ui/card"
 import {ProjectCard} from "@/components/project-card";
 import {HobbyCard} from "@/components/hobby-card";
+import {SkillCard} from "@/components/skill-card";
 
 export default function Home() {
     const sectionClassName = "min-h-[calc(100lvh-40px)]"
@@ -48,21 +49,20 @@ export default function Home() {
                     <div className="w-1/2 flex flex-col">
                         <p className={"font-bold text-2xl text-center mb-1"}>Hobbies and interests</p>
                         <div className="grid grid-cols-2 grid-rows-3 gap-2">
-                            {/*<ProjectCard projectId={""} projectName={"Project"} projectDescription={"This is a project"}/>*/}
-                            <HobbyCard hobbyName={"Listen music"} hobbyTags={["D&B", "Raw", "EDM", "Metal"]}
-                                       hobbyId={""} hobbyIcon={"icon-[arcticons--vibe-music]"}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={["Thriller", "Sci-fi", "Fantacy", "Horror"]}
-                                       hobbyId={""} hobbyIcon={"icon-[arcticons--cool-reader]"}/>
-                            <HobbyCard hobbyName={"Festivals"}
-                                       hobbyTags={["Defqon", "Decibel", "Spoontech", "Liquicity"]} hobbyId={""}
-                                       hobbyIcon={"icon-[arcticons--qdance]"}/>
-                            <HobbyCard hobbyName={"Gaming"}
-                                       hobbyTags={["Simulator", "Looter Shooter", "Cozy", "Action"]} hobbyId={""}
-                                       hobbyIcon={"icon-[ion--game-controller-outline]"}/>
-                            <HobbyCard hobbyName={"Drinking Coffee"} hobbyTags={["Hot", "Cold", "Hazelnut", "To go"]}
-                                       hobbyId={""} hobbyIcon={"icon-[hugeicons--coffee-02]"}/>
-                            <HobbyCard hobbyName={"Lego"} hobbyTags={["Collect", "Build", "Moc", "Achieve"]}
-                                       hobbyId={""} hobbyIcon={"icon-[lucide--toy-brick]"}/>
+                            <HobbyCard name={"Listen music"} tags={["D&B", "Raw", "EDM", "Metal"]}
+                                       id={""} iconProps={{icon: "arcticons:vibe-music"}}/>
+                            <HobbyCard name={"Hobby"} tags={["Thriller", "Sci-fi", "Fantacy", "Horror"]}
+                                       id={""} iconProps={{icon: "arcticons:cool-reader"}}/>
+                            <HobbyCard name={"Festivals"}
+                                       tags={["Defqon", "Decibel", "Spoontech", "Liquicity"]} id={""}
+                                       iconProps={{icon: "arcticons:qdance"}}/>
+                            <HobbyCard name={"Gaming"}
+                                       tags={["Simulator", "Looter Shooter", "Cozy", "Action"]} id={""}
+                                       iconProps={{icon: "ion:game-controller-outline"}}/>
+                            <HobbyCard name={"Drinking Coffee"} tags={["Hot", "Cold", "Hazelnut", "To go"]}
+                                       id={""} iconProps={{icon: "hugeicons:coffee-02"}}/>
+                            <HobbyCard name={"Lego"} tags={["Collect", "Build", "Moc", "Achieve"]}
+                                       id={""} iconProps={{icon: "lucide:toy-brick"}}/>
                         </div>
                     </div>
                 </div>
@@ -71,96 +71,18 @@ export default function Home() {
             <section id={"skills"} className={cn(sectionClassName, "snap-start")}>
                 <h2 className={"font-bold text-5xl text-center mb-1"}> Skills</h2>
                 <div className="grid grid-cols-3 grid-rows-3 gap-4">
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
-                    <Card className="h-full w-full">
-                        <CardHeader>
-                            <CardTitle>Skill name</CardTitle>
-                            <CardDescription>
-                                This is a awesome skill description
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            icon or picture of skill
-                        </CardContent>
-                        <CardFooter>
-                            A badge or tag with hover for more info
-                        </CardFooter>
-                    </Card>
-
+                    <SkillCard name={"Backend"} description={"This is a description"} tags={["C#", "DotNet", "PostgreSQL", "Mongo DB", "Rabbit  MQ"]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Cloud & Devops"} description={"This is a description"} tags={["Azure", "Docker", "Argo CD", "Kubernetes","Terraform",]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Frontend"} description={"This is a description"} tags={["hello"]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Design & UX"} description={"This is a description"} tags={["hello"]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Tools & Technology"} description={"This is a description"} tags={["hello"]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Soft Skills"} description={"This is a description"} tags={["hello"]}
+                               iconProps={{icon: "heroicons:paint-brush"}}/>
                 </div>
             </section>
 
