@@ -53,10 +53,16 @@ export default function Home() {
                                        hobbyId={""} hobbyIcon={"icon-[arcticons--vibe-music]"}/>
                             <HobbyCard hobbyName={"Hobby"} hobbyTags={["Thriller", "Sci-fi", "Fantacy", "Horror"]}
                                        hobbyId={""} hobbyIcon={"icon-[arcticons--cool-reader]"}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
-                            <HobbyCard hobbyName={"Hobby"} hobbyTags={[]} hobbyId={""} hobbyIcon={""}/>
+                            <HobbyCard hobbyName={"Festivals"}
+                                       hobbyTags={["Defqon", "Decibel", "Spoontech", "Liquicity"]} hobbyId={""}
+                                       hobbyIcon={"icon-[arcticons--qdance]"}/>
+                            <HobbyCard hobbyName={"Gaming"}
+                                       hobbyTags={["Simulator", "Looter Shooter", "Cozy", "Action"]} hobbyId={""}
+                                       hobbyIcon={"icon-[ion--game-controller-outline]"}/>
+                            <HobbyCard hobbyName={"Drinking Coffee"} hobbyTags={["Hot", "Cold", "Hazelnut", "To go"]}
+                                       hobbyId={""} hobbyIcon={"icon-[hugeicons--coffee-02]"}/>
+                            <HobbyCard hobbyName={"Lego"} hobbyTags={["Collect", "Build", "Moc", "Achieve"]}
+                                       hobbyId={""} hobbyIcon={"icon-[lucide--toy-brick]"}/>
                         </div>
                     </div>
                 </div>
