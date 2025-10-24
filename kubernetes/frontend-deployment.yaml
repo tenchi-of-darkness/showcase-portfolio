@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    portfolio.application: "frontend"
+  name: "frontend"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      portfolio.application: "frontend"
+  template:
+    metadata:
+      labels:
+        portfolio.application: "frontend"
+    spec:
+      containers:
+        - image: "harbor.melanievandegraaf.nl/portfolio/frontend:latest"
+          imagePullPolicy: Always
+          name: frontend
+          ports:
+            - containerPort: 3000
+              name: http
+              protocol: TCP
+      restartPolicy: Always
