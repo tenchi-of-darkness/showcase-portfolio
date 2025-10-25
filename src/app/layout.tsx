@@ -50,7 +50,7 @@ export default function RootLayout({children}: Readonly<{
     return (
         <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased text-foreground`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
         >
         <NavigationMenu className={"bg-primary text-primary-foreground"}>
             <NavigationMenuList>
