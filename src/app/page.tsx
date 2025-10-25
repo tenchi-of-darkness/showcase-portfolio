@@ -67,20 +67,20 @@ export default function Home() {
             </section>
 
             <section id={"skills"} className={cn(sectionClassName, "snap-start")}>
-                <h2 className={"font-bold text-5xl text-center mb-1"}> Skills</h2>
+                <h2 className={"font-bold text-5xl text-center mt-5 mb-8"}> Skills</h2>
                 <div className="grid grid-cols-3 grid-rows-3 gap-4">
-                    <SkillCard name={"Backend"} description={"This is a description"} tags={["C#", "DotNet", "PostgreSQL", "Mongo DB", "Rabbit  MQ"]}
-                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Backend"} description={"The Logic of the application"} tags={["C#", "DotNet", "PostgreSQL", "Mongo DB", "Rabbit  MQ"]}
+                               iconProps={{icon: "icon-park-outline:source-code"}}/>
                     <SkillCard name={"Cloud & Devops"} description={"This is a description"} tags={["Azure", "Docker", "Argo CD", "Kubernetes","Terraform",]}
+                               iconProps={{icon: "tabler:cloud"}}/>
+                    <SkillCard name={"Frontend"} description={"This is a description"} tags={["React", "Next.JS", "TypeScript", "JavaScript", "HTML", "Tailwind", "Css"]}
+                               iconProps={{icon: "solar:code-2-linear"}}/>
+                    <SkillCard name={"Design & UX"} description={"This is a description"} tags={["Figma", "Prototyping", "User Research", "UX Design"]}
                                iconProps={{icon: "heroicons:paint-brush"}}/>
-                    <SkillCard name={"Frontend"} description={"This is a description"} tags={["hello"]}
-                               iconProps={{icon: "heroicons:paint-brush"}}/>
-                    <SkillCard name={"Design & UX"} description={"This is a description"} tags={["hello"]}
-                               iconProps={{icon: "heroicons:paint-brush"}}/>
-                    <SkillCard name={"Tools & Technology"} description={"This is a description"} tags={["hello"]}
-                               iconProps={{icon: "heroicons:paint-brush"}}/>
-                    <SkillCard name={"Soft Skills"} description={"This is a description"} tags={["hello"]}
-                               iconProps={{icon: "heroicons:paint-brush"}}/>
+                    <SkillCard name={"Tools & Technology"} description={"This is a description"} tags={["Git", "Rider", "Webstorm", "VS Code", "Postman", "Äzure Pipelines", "Trello"]}
+                               iconProps={{icon: "arcticons:git"}}/>
+                    <SkillCard name={"Soft Skills"} description={"This is a description"} tags={["Agile/ Scrum", "Team Leadership", "Communication", "Project Management"]}
+                               iconProps={{icon: "lets-icons:user"}}/>
                 </div>
             </section>
 

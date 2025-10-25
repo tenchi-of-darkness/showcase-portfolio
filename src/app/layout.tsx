@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
+import {Icon} from "@iconify/react";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -29,7 +30,8 @@ export const metadata: Metadata = {
 function NavLink({className, ...props}: ComponentProps<typeof Link>) {
     return <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link className={cn(className, "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground/90")} {...props}/>
+            <Link
+                className={cn(className, "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground/90")} {...props}/>
         </NavigationMenuLink>
     </NavigationMenuItem>;
 }
@@ -63,11 +65,11 @@ export default function RootLayout({children}: Readonly<{
                 <NavLink href={"/#experience"}>Experience</NavLink>
                 <NavLink href={"/#contact"}>Contact</NavLink>
                 <NavIcon href="https://github.com/tenchi-of-darkness">
-                    <span className="icon-[line-md--github-twotone] w-6 h-6"></span>
+                    <Icon className={"text-secondary size-6"} icon="line-md:github-twotone"/>
                 </NavIcon>
 
                 <NavIcon className={"mr-3"} href="https://www.linkedin.com/in/melanie-van-de-graaf/">
-                    <span className="icon-[line-md--linkedin] w-6 h-6"></span>
+                    <Icon className={"text-secondary size-6"} icon="line-md:linkedin"/>
                 </NavIcon>
             </NavigationMenuList>
         </NavigationMenu>
