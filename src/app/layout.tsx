@@ -54,7 +54,7 @@ export default function RootLayout({children}: Readonly<{
         >
         <NavigationMenu className={"bg-primary text-primary-foreground"}>
             <NavigationMenuList>
-                <NavLink href={"/#melanie"}>Melanie</NavLink>
+                <NavLink href={"/"}>Melanie</NavLink>
             </NavigationMenuList>
             <NavigationMenuList>
                 <NavLink href={"/#about"}>About</NavLink>

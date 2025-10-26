@@ -3,6 +3,7 @@ import {HobbyCard} from "@/components/hobby-card";
 import {SkillCard} from "@/components/skill-card";
 import Image from "next/image";
 import TypingText from "@/components/ui/shadcn-io/typing-text";
+import {ProjectCard, ProjectCardVariant} from "@/components/project-card";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh";
@@ -14,7 +15,8 @@ export default function Home() {
                         <p className={"bg-tag text-tag-foreground w-fit px-2 py-1 mb-5"}
                            style={{borderRadius: '15px'}}>
                             Available for opportunities</p>
-                        <h2 className={"font-bold text-foreground text-5xl mb-2"}>Hi, I&apos;m <span className={"text-primary"}>Melanie</span></h2>
+                        <h2 className={"font-bold text-foreground text-5xl mb-2"}>Hi, I&apos;m <span
+                            className={"text-primary"}>Melanie</span></h2>
                         <div className={"font-bold text-accent mb-4 text-2xl"}>
                             {"<"}
                             <TypingText
@@ -58,7 +60,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"about"}>
-                <h2 className={"font-bold text-5xl text-center mb-1"}>About me</h2>
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>About me</h2>
                 <p className={"text-purple-400 text-center"}>Get to know me</p>
 
                 <div className="flex justify-between">
@@ -99,7 +101,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"skills"}>
-                <h2 className={"font-bold text-5xl text-center mt-5 mb-8"}> Skills</h2>
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-8"}> Skills</h2>
                 <div className="grid grid-cols-3 gap-4">
                     <SkillCard name={"Backend"} description={"The Logic of the application"}
                                tags={["C#", "DotNet", "PostgreSQL", "Mongo DB", "Rabbit  MQ"]}
@@ -123,7 +125,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"proficiencies"}>
-                <h2 className={"font-bold text-5xl text-center mb-1"}> Proficiencies</h2>
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}> Proficiencies</h2>
                 <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with
                     technologies</p>
                 <div className="grid grid-cols-2 grid-rows-5 gap-10">
@@ -142,15 +144,21 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"projects"}>
-                Projects
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Projects</h2>
+                <div className="grid grid-cols-2 gap-10">
+                    <ProjectCard variant={ProjectCardVariant.Client} name={"Sue"} description={"Green energy"}
+                                 tags={["C#", "DotNet", "PostGreSQL", "Rabbit MQ", "Mongo DB"]} />
+                    <ProjectCard variant={ProjectCardVariant.School} name={"Chroma"} description={"Enterprise software project. An Instagram clone"}
+                                 tags={["C#", "DotNet", "Kubernetes", "Argo CD", "Mongo DB"]} />
+                </div>
             </section>
 
             <section className={sectionClassName} id={"experience"}>
-                Experience
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Experience</h2>
             </section>
 
             <section className={sectionClassName} id={"contact"}>
-                Contact
+                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Contact</h2>
             </section>
 
         </div>
