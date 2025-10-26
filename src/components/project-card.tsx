@@ -1,7 +1,9 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
-import React from "react";
+import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
+import type {UrlObject} from "url";
 
 export enum ProjectCardVariant {
     Client = 0,
@@ -15,13 +17,19 @@ export interface ProjectCardProps {
     description: string;
     tags: string[];
     variant: ProjectCardVariant;
+    demoUrl?: string;
+    gitUrl?: string;
+    readMoreUrl?: string | UrlObject
 }
 
 export function ProjectCard({
                                 name,
                                 description,
                                 tags,
-                                variant
+                                variant,
+                                demoUrl,
+                                gitUrl,
+                                readMoreUrl
                             }: Readonly<ProjectCardProps>) {
     let titleString: string;
 
@@ -62,8 +70,16 @@ export function ProjectCard({
                     <Badge className={"bg-accent text-accent-foreground w-full"} key={tag}>{tag}</Badge>))}
             </CardFooter>
             <div className={"grid grid-cols-2 p-2 gap-5"}>
-                <Button> Code </Button>
-                <Button> Demo </Button>
+                <Activity mode={gitUrl ? "visible" : "hidden"}>
+                    <Button asChild>
+                        <a target={"_blank"} href={gitUrl}>Code</a>
+                    </Button>
+                </Activity>
+                <Activity mode={demoUrl ? "visible" : "hidden"}>
+                    <Button asChild>
+                        <a target={"_blank"}  href={demoUrl}>Demo</a>
+                    </Button>
+                </Activity>
             </div>
         </Card>
     )

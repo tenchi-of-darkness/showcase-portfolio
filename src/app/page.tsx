@@ -146,10 +146,22 @@ export default function Home() {
             <section className={sectionClassName} id={"projects"}>
                 <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Projects</h2>
                 <div className="grid grid-cols-2 gap-10">
-                    <ProjectCard variant={ProjectCardVariant.Client} name={"Sue"} description={"Green energy"}
-                                 tags={["C#", "DotNet", "PostGreSQL", "Rabbit MQ", "Mongo DB"]} />
-                    <ProjectCard variant={ProjectCardVariant.School} name={"Chroma"} description={"Enterprise software project. An Instagram clone"}
-                                 tags={["C#", "DotNet", "Kubernetes", "Argo CD", "Mongo DB"]} />
+                    <ProjectCard
+                        variant={ProjectCardVariant.Client}
+                        name={"Sue"}
+                        description={"Green energy"}
+                        tags={["C#", "DotNet", "PostGreSQL", "Rabbit MQ", "Mongo DB"]}
+                        gitUrl={""}
+                        demoUrl={""}
+                    />
+                    <ProjectCard
+                        variant={ProjectCardVariant.School}
+                        name={"Chroma"}
+                        description={"Enterprise software project. An Instagram clone"}
+                        tags={["C#", "DotNet", "Kubernetes", "Argo CD", "Mongo DB"]}
+                        gitUrl={"https://github.com/orgs/Chroma-S6/repositories"}
+                        demoUrl={""}
+                    />
                 </div>
             </section>
 
