@@ -39,6 +39,14 @@
     --color-card: var(--card);
     --color-tag-foreground: var(--tag-foreground);
     --color-tag: var(--tag);
+    --color-level-beginner: var(--level-beginner);
+    --color-level-beginner-foreground: var(--background);
+    --color-level-intermediate: var(--accent);
+    --color-level-intermediate-foreground: var(--background);
+    --color-level-advanced: var(--level-advanced);
+    --color-level-advanced-foreground: var(--background);
+    --color-level-expert: var(--primary);
+    --color-level-expert-foreground: var(--foreground);
     --radius-sm: calc(var(--radius) - 4px);
     --radius-md: calc(var(--radius) - 2px);
     --radius-lg: var(--radius);
@@ -127,6 +135,9 @@ body {
     --accent: #AFB3F7;
     --secondary: #BEF67A;
     --popover: #AFB3F7;
+    --level-beginner: #BECAE2;
+    --level-advanced: #8976D3;
+    --level-gradient: 90deg,rgba(190, 202, 226, 1) 0%, rgba(175, 179, 247, 1) 33%, rgba(137, 118, 211, 1) 66%, rgba(99, 56, 174, 1) 100%;
 }
 
 @layer base {

@@ -6,6 +6,8 @@ import TypingText from "@/components/ui/shadcn-io/typing-text";
 import {ProjectCard, ProjectCardVariant} from "@/components/project-card";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import {SkillLevel} from "@/components/skill-level-bar";
+import {SkillLevelItem} from "@/components/skill-level-item";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh";
@@ -53,7 +55,8 @@ export default function Home() {
                             spontaneous, a bit sarcastic, endlessly curious, and driven by empathy in everything I
                             do.</p>
                         <Button asChild>
-                            <Link href={"/#projects"} className={"bg-primary mt-5 text-white p-2"}>View my projects</Link>
+                            <Link href={"/#projects"} className={"bg-primary mt-5 text-white p-2"}>View my
+                                projects</Link>
                         </Button>
                     </div>
 
@@ -134,17 +137,18 @@ export default function Home() {
                 <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}> Proficiencies</h2>
                 <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with
                     technologies</p>
+                {/* rounded-r-none */}
                 <div className="grid grid-cols-2 grid-rows-5 gap-10">
-                    <p>C#</p>
-                    <p>Skill</p>
-                    <p>Javascript</p>
-                    <p>Skill</p>
-                    <p>TypeScript</p>
-                    <p>Skill</p>
-                    <p>Azurecloud</p>
-                    <p>Skill</p>
-                    <p>Devops</p>
-                    <p>Skill</p>
+                    <SkillLevelItem title={"C# (ASP.NET Core)"} level={SkillLevel.Advanced}/>
+                    <SkillLevelItem title={"Javascript"} level={SkillLevel.Intermediate}/>
+                    <SkillLevelItem title={"Typescript"} level={SkillLevel.Advanced}/>
+                    <SkillLevelItem title={"Azure Cloud"} level={SkillLevel.Intermediate}/>
+                    <SkillLevelItem title={"DevOps"} level={SkillLevel.Advanced}/>
+                    <SkillLevelItem title={"HTML/CSS"} level={SkillLevel.Intermediate}/>
+                    <SkillLevelItem title={"IaC (Terraform)"} level={SkillLevel.Beginner}/>
+                    <SkillLevelItem title={"Kubernetes"} level={SkillLevel.Intermediate}/>
+                    <SkillLevelItem title={"GitOps (ArgoCD)"} level={SkillLevel.Beginner}/>
+                    <SkillLevelItem title={"Database (PostgreSQL, MySQL)"} level={SkillLevel.Advanced}/>
                 </div>
 
             </section>

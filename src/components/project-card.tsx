@@ -2,7 +2,6 @@ import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/compon
 import {Badge} from "@/components/ui/badge";
 import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
-import Link from "next/link";
 import type {UrlObject} from "url";
 
 export enum ProjectCardVariant {
@@ -19,7 +18,6 @@ export interface ProjectCardProps {
     variant: ProjectCardVariant;
     demoUrl?: string;
     gitUrl?: string;
-    readMoreUrl?: string | UrlObject
 }
 
 export function ProjectCard({
@@ -28,8 +26,7 @@ export function ProjectCard({
                                 tags,
                                 variant,
                                 demoUrl,
-                                gitUrl,
-                                readMoreUrl
+                                gitUrl
                             }: Readonly<ProjectCardProps>) {
     let titleString: string;
 
