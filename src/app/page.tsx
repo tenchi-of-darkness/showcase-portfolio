@@ -73,11 +73,13 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"about"}>
-                <h2 className={sectionTitleClassName}>About me</h2>
-                <p className={"text-purple-400 text-center"}>Get to know me</p>
+                <h2 className={"font-bold text-foreground text-5xl text-center"}>About <span
+                    className={"text-primary"}>Me</span></h2>
+                <p className={"text-accent text-center"}>Get to know me</p>
                 <div className="flex justify-between">
                     <div className="w-1/2 flex flex-col">
-                        <p className={"font-bold text-2xl mb-1 text-left"}>My Story</p>
+                        <h2 className={"font-bold text-foreground text-5xl mb-2"}><span
+                            className={"text-primary"}>My</span> story </h2>
                         <p className={"mr-50"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam posuere
                             eleifend ex eu tincidunt.
                             In eleifend luctus blandit. Maecenas sollicitudin ac augue at viverra. Nullam sodales eros
@@ -138,7 +140,7 @@ export default function Home() {
 
             <section className={sectionClassName} id={"proficiencies"}>
                 <h2 className={sectionTitleClassName}> Proficiencies</h2>
-                <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with
+                <p className={"text-accent text-center mb-10"}>My confidence and experience with
                     technologies</p>
                 {/* rounded-r-none */}
                 <div className="grid grid-cols-2 grid-rows-5 gap-10">
@@ -157,7 +159,8 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"projects"}>
-                <h2 className={cn(sectionTitleClassName, "mb-8")}>Projects</h2>
+                <h2 className={cn(sectionTitleClassName )}>Projects</h2>
+                <p className={"text-accent text-center mb-10"}>My projects so far</p>
                 <div className="grid grid-cols-2 gap-10">
                     <ProjectCard
                         variant={ProjectCardVariant.Client}
@@ -179,7 +182,8 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"experience"}>
-                <h2 className={cn(sectionTitleClassName, "mb-8")}>Experience</h2>
+                <h2 className={cn(sectionTitleClassName )}>Experience</h2>
+                <p className={"text-accent text-center mb-10"}>My educational journey and experiences so far</p>
                 <div className="grid grid-cols-2 gap-10">
                     <ExperienceCard
                         variant={ExperienceCardVariant.Work}
