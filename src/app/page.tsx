@@ -8,11 +8,13 @@ import {Button} from "@/components/ui/button";
 import Link from "next/link";
 import {SkillLevel} from "@/components/skill-level-bar";
 import {SkillLevelItem} from "@/components/skill-level-item";
+import DigitalRain from "@/components/digital-rain";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh";
     return (
         <div className={"flex flex-col"}>
+            <DigitalRain/>
             <section className={cn(sectionClassName, "mt-15")} id={"melanie"}>
                 <div className="flex flex-row items-center justify-between mt-2 p-5">
                     <div>

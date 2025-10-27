@@ -2,7 +2,6 @@ import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/compon
 import {Badge} from "@/components/ui/badge";
 import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
-import type {UrlObject} from "url";
 
 export enum ProjectCardVariant {
     Client = 0,
