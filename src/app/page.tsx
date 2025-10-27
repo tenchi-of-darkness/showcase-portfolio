@@ -9,6 +9,7 @@ import Link from "next/link";
 import {SkillLevel} from "@/components/skill-level-bar";
 import {SkillLevelItem} from "@/components/skill-level-item";
 import DigitalRain from "@/components/digital-rain";
+import {ExperienceCard, ExperienceCardVariant} from "@/components/experience-card";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh mb-10";
@@ -178,7 +179,21 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"experience"}>
-                <h2 className={sectionTitleClassName}>Experience</h2>
+                <h2 className={cn(sectionTitleClassName, "mb-8")}>Experience</h2>
+                <div className="grid grid-cols-2 gap-10">
+                    <ExperienceCard
+                        variant={ExperienceCardVariant.Work}
+                        name={"Mediaan"}
+                        description={"Fullstack developer"}
+                        tags={["C#", "DotNet", "PostGreSQL", "Terraform", "Mongo DB"]}
+                    />
+                    <ExperienceCard
+                        variant={ExperienceCardVariant.Education}
+                        name={"Fontys University"}
+                        description={"Bachelor Software Engineer"}
+                        tags={["C#", "DotNet", "PostGreSQL", "Terraform", "Mongo DB"]}
+                    />
+                </div>
             </section>
 
             <section className={sectionClassName} id={"contact"}>

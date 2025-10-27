@@ -1,46 +1,32 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import {Badge} from "@/components/ui/badge";
-import React, {Activity} from "react";
-import {Button} from "@/components/ui/button";
-
-export enum ProjectCardVariant {
-    Client = 0,
-    School = 1,
-    Internship = 2,
-    Personal = 3
+import React from "react";
+export enum ExperienceCardVariant {
+    Work = 0,
+    Education = 1,
 }
 
-export interface ProjectCardProps {
+export interface ExperienceCardProps {
     name: string;
     description: string;
     tags: string[];
-    variant: ProjectCardVariant;
-    demoUrl?: string;
-    gitUrl?: string;
+    variant: ExperienceCardVariant;
 }
 
-export function ProjectCard({
+export function ExperienceCard({
                                 name,
                                 description,
                                 tags,
                                 variant,
-                                demoUrl,
-                                gitUrl
-                            }: Readonly<ProjectCardProps>) {
+                            }: Readonly<ExperienceCardProps>) {
     let titleString: string;
 
     switch (variant) {
-        case ProjectCardVariant.Client:
-            titleString = "Client project"
+        case ExperienceCardVariant.Work:
+            titleString = "Work experience"
             break;
-        case ProjectCardVariant.School:
-            titleString = "School project"
-            break;
-        case ProjectCardVariant.Internship:
-            titleString = "Internship project"
-            break;
-        case ProjectCardVariant.Personal:
-            titleString = "Personal project"
+        case ExperienceCardVariant.Education:
+            titleString = "Education"
             break;
         default:
             titleString = "";
@@ -66,16 +52,6 @@ export function ProjectCard({
                     <Badge className={"bg-accent text-accent-foreground w-full"} key={tag}>{tag}</Badge>))}
             </CardFooter>
             <div className={"grid grid-cols-2 p-2 gap-5"}>
-                <Activity mode={gitUrl ? "visible" : "hidden"}>
-                    <Button asChild>
-                        <a target={"_blank"} href={gitUrl}>Code</a>
-                    </Button>
-                </Activity>
-                <Activity mode={demoUrl ? "visible" : "hidden"}>
-                    <Button asChild>
-                        <a target={"_blank"}  href={demoUrl}>Demo</a>
-                    </Button>
-                </Activity>
             </div>
         </Card>
     )
