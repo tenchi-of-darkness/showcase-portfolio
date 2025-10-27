@@ -11,7 +11,8 @@ import {SkillLevelItem} from "@/components/skill-level-item";
 import DigitalRain from "@/components/digital-rain";
 
 export default function Home() {
-    const sectionClassName = "min-h-dvh";
+    const sectionClassName = "min-h-dvh mb-10";
+    const sectionTitleClassName = "font-bold text-5xl text-center mt-12";
     return (
         <div className={"flex flex-col"}>
             <DigitalRain/>
@@ -71,9 +72,8 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"about"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>About me</h2>
+                <h2 className={sectionTitleClassName}>About me</h2>
                 <p className={"text-purple-400 text-center"}>Get to know me</p>
-
                 <div className="flex justify-between">
                     <div className="w-1/2 flex flex-col">
                         <p className={"font-bold text-2xl mb-1 text-left"}>My Story</p>
@@ -112,7 +112,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"skills"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-8"}> Skills</h2>
+                <h2 className={cn(sectionTitleClassName, "mb-8")}> Skills</h2>
                 <div className="grid grid-cols-3 gap-4">
                     <SkillCard name={"Backend"} description={"The Logic of the application"}
                                tags={["C#", "DotNet", "PostgreSQL", "Mongo DB", "Rabbit  MQ"]}
@@ -136,7 +136,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"proficiencies"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}> Proficiencies</h2>
+                <h2 className={sectionTitleClassName}> Proficiencies</h2>
                 <p className={"font-bold text-gray-500 text-center mb-10"}>My confidence and experience with
                     technologies</p>
                 {/* rounded-r-none */}
@@ -156,7 +156,7 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"projects"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Projects</h2>
+                <h2 className={cn(sectionTitleClassName, "mb-8")}>Projects</h2>
                 <div className="grid grid-cols-2 gap-10">
                     <ProjectCard
                         variant={ProjectCardVariant.Client}
@@ -178,11 +178,11 @@ export default function Home() {
             </section>
 
             <section className={sectionClassName} id={"experience"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Experience</h2>
+                <h2 className={sectionTitleClassName}>Experience</h2>
             </section>
 
             <section className={sectionClassName} id={"contact"}>
-                <h2 className={"font-bold text-5xl text-center mt-10 mb-1"}>Contact</h2>
+                <h2 className={sectionTitleClassName}>Contact</h2>
             </section>
 
         </div>
