@@ -4,6 +4,8 @@ import {SkillCard} from "@/components/skill-card";
 import Image from "next/image";
 import TypingText from "@/components/ui/shadcn-io/typing-text";
 import {ProjectCard, ProjectCardVariant} from "@/components/project-card";
+import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh";
@@ -41,14 +43,18 @@ export default function Home() {
                             {"/>"}
                         </div>
 
-                        <p className={"w-[40dvw]"} style={{borderRadius: '15px'}}>
-                            Cras vel augue rhoncus, imperdiet libero eu, viverra ligula. Vestibulum ante ipsum primis in
-                            faucibus orci luctus et ultrices posuere cubilia curae; Vivamus malesuada ex dui. Phasellus
-                            augue urna, aliquet in placerat eu, molestie at neque. Quisque tincidunt porta mauris ut
-                            dictum. Mauris lorem mi, commodo vitae sem at</p>
-                        <button className={"bg-purple-600 mt-5 text-white p-1"} style={{borderRadius: '15px'}}>View my
-                            projects
-                        </button>
+                        <p className={"w-[40dvw]"}>
+                            Hi! I’m a fullstack developer who loves diving into complex projects that solve real
+                            problems. I’m most at home working with C# in Rider and Next.JS/Typescript in Webstorm,
+                            exploring new ideas with curiosity and focus. Music is my coding companion, from hardstyle
+                            and drum & bass to metal, it keeps me in the zone.
+                            Outside of coding, you will find me reading books of Stephen King or other authors,
+                            sketching, dancing at festivals, Going to theme parks or playing D&D with friends. I’m
+                            spontaneous, a bit sarcastic, endlessly curious, and driven by empathy in everything I
+                            do.</p>
+                        <Button asChild>
+                            <Link href={"/#projects"} className={"bg-primary mt-5 text-white p-2"}>View my projects</Link>
+                        </Button>
                     </div>
 
                     <div
