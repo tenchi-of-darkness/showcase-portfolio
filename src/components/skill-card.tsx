@@ -1,14 +1,22 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
-import {Badge} from "@/components/ui/badge";
 import {Icon} from "@iconify/react";
 import {cn} from "@/lib/utils";
 import React, {ComponentProps} from "react";
+import {TagHover} from "@/components/tag-hover-card";
+
+interface Tag {
+    name: string;
+    title: string;
+    description: React.ReactElement | string;
+    subtitle: React.ReactElement | string;
+}
 
 export interface SkillCardProps {
     name: string;
     description: string;
-    tags: string[];
+    tags: Tag[];
     iconProps: ComponentProps<typeof Icon>;
+
 }
 
 export function SkillCard({
@@ -33,7 +41,12 @@ export function SkillCard({
             </CardHeader>
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
                 {tags.map((tag) => (
-                    <Badge className={"bg-accent text-accent-foreground w-full"} key={tag}>{tag}</Badge>))}
+                    <TagHover
+                        key={tag.name}
+                        tag={tag.name}
+                        title={tag.title}
+                        description={tag.description}
+                        subtitle={<a href={"/#Chroma"}>{tag.subtitle}</a>}/>))}
             </CardFooter>
         </Card>
     );

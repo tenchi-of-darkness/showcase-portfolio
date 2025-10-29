@@ -59,10 +59,10 @@ export function ProjectCard({
     }
 
     return (
-        <Card className={"p-0"}>
+        <Card className={"p-0"} id={projectName}>
             <div className={"p-5"}>
                 <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
-                    {titleString}
+                    {projectName}
                 </p>
             </div>
             <CardHeader className={"p-3 px-4 pb-0"}>
