@@ -28,9 +28,9 @@ export function ProjectDialog({
             <DialogContent>
                 <DialogHeader>
                     {projectName}
-                    <DialogTitle> {title} </DialogTitle>
-                    <DialogDescription>
-                        {longDescription}
+                    <DialogTitle>{title}</DialogTitle>
+                    <DialogDescription className={"text-foreground"}>
+                        {longDescription.split("\n").map((text, i) => <p className={"mb-1"} key={i}>{text}</p>)}
                     </DialogDescription>
                 </DialogHeader>
             </DialogContent>

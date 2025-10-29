@@ -1,0 +1,180 @@
+[
+  {
+    "title": "Chroma",
+    "client": "Fontys",
+    "smallDescription": "social media platform inspired by Instagram, designed for artists to share their creative work. . I wanted to create something that not only looked like a social app but was built like a scalable, real-world system. Because platforms like this must handle many users and heavy traffic, I chose a microservice architecture. The platform runs on Azure Kubernetes Service (AKS).",
+    "longDescription": "I built a social media platform inspired by Instagram, designed for artists to share their creative work, from drawings and photos to other visual media. I wanted to create something that not only looked like a social app but was built like a scalable, real-world system. Because platforms like this must handle many users and heavy traffic, I chose a microservice architecture, where each service: posts, interactions, profiles, and search runs independently with its own database.\nTo keep the system maintainable, I used the Onion Architecture and implemented patterns like CQRS and SAGA to separate read/write logic and manage distributed workflows, such as safely deleting user data across multiple services. The services communicate asynchronously using MassTransit and a message bus, ensuring reliability and fault tolerance.\nThe platform runs on Azure Kubernetes Service (AKS) with Horizontal Pod Autoscaling, and deployments are managed with ArgoCD through a GitOps workflow. Building this project taught me how to design cloud-native systems that are scalable, resilient, and maintainable, turning a creative idea into a full demonstration of modern software architecture and DevOps practices.",
+    "gitUrl": "https://github.com/orgs/Chroma-S6/repositories",
+    "demoUrl": null,
+    "tags": [
+      {
+        "name": "C#",
+        "title": "Backend in C#",
+        "description": "Microservice architecture ",
+        "subtitle": ""
+      },
+      {
+        "name": "DotNet",
+        "title": "",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "PostgreSQL",
+        "title": "Database",
+        "description": "Read and write database for implementing CQRS pattern",
+        "subtitle": ""
+      },
+      {
+        "name": "Rabbit MQ",
+        "title": "",
+        "description": "Used for messaging between services",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "title": "Green Energy Workload Scheduler",
+    "client": "Sue",
+    "smallDescription": "As a backend engineer, I developed a C# microservices platform on AWS that intelligently schedules computing tasks to run when renewable energy is most abundant. This AI-integrated system minimizes the carbon footprint by aligning processing demand with the availability of green energy.",
+    "longDescription": "This project aimed to create a \"green energy GPS\" for computing, an intelligent platform that minimizes the carbon footprint of computational tasks by scheduling them when renewable energy is most abundant. The system dynamically aligns processing demand with sustainable energy supply, leveraging AI forecasts to distribute workloads across cloud regions without compromising performance.\n\nAs a backend engineer, I was responsible for architecting and developing the core of this system in C#. Using ASP.NET Core, I built the central scheduling and part of the workload services that translated AI energy predictions into precisely timed actions. I engineered a resilient, message-driven architecture with RabbitMQ to ensure reliable, asynchronous communication between microservices. To achieve modular and testable code, I utilized patterns like MediatR while integrating libraries such as Quartz.NET and Hangfire for robust task management.\n\nThe final platform is a scalable microservices ecosystem deployed as Docker containers on AWS, complete with real-time monitoring through Prometheus and Grafana dashboards. This project was a deep dive into building distributed, AI-integrated systems. It successfully demonstrated how intelligent software automation can lead to more sustainable computing and provided me with hands-on experience in designing for scalability, resilience, and clean separation of concerns.",
+    "gitUrl": null,
+    "demoUrl": null,
+    "tags": [
+      {
+        "name": "C#",
+        "title": "ASP.CORE 8",
+        "description": "Microservice architecture ",
+        "subtitle": ""
+      },
+      {
+        "name": "Next.Js",
+        "title": "Frontend",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "PostgreSQL",
+        "title": "Database",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Rabbit MQ",
+        "title": "Message bus",
+        "description": "Used for messaging between services",
+        "subtitle": ""
+      },
+      {
+        "name": "API Gateway",
+        "title": "Ocelot",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "title": "Smart Classroom",
+    "client": "Fontys",
+    "smallDescription": "Using React and TypeScript, I developed a responsive and interactive dashboard to visualize a smart classroom. The application displays a live floor plan showing the location of smart devices, offering an intuitive tool for teachers and students.",
+    "longDescription": "This project, developed for a client, aimed to create a central dashboard for a smart classroom. The goal was to provide an intuitive, interactive floor plan for teachers and students to visualize the location and status of smart devices like sensors, beacons, and smartboards, primarily for showcasing at the university's open days. As the front-end developer for the dashboard, my responsibility was to bring this concept to life, and I implemented the entire user interface using React and TypeScript.\n\nAt the core of the dashboard, I built a dynamic and interactive map that clearly displays the classroom layout and all connected devices. To ensure a smooth user experience, I optimized performance by using lazy loading for components and implementing modals that display detailed information without navigating away from the main view. The design was guided by extensive research into UI/UX best practices, focusing on usability and accessibility. This included implementing a carefully selected, color-blind friendly color scheme to ensure the data was easy to interpret. I also developed functionality that allows users to filter the devices shown on the floor plan, making it easy to focus on specific information.\n\nThe final product was a responsive, performant, and visually engaging dashboard that successfully met the client's requirements. It served as an effective tool for demonstrating the smart classroom's capabilities to students",
+    "gitUrl": null,
+    "demoUrl": "https://youtu.be/5hxuvkYApc8",
+    "tags": [
+      {
+        "name": "Typescript",
+        "title": "Frontend",
+        "description": "Dashboard",
+        "subtitle": ""
+      },
+      {
+        "name": "React",
+        "title": "Frontend",
+        "description": "Dashboard",
+        "subtitle": ""
+      },
+      {
+        "name": "Figma",
+        "title": "Database",
+        "description": "Read and write database for implementing CQRS pattern",
+        "subtitle": ""
+      },
+      {
+        "name": "Prototyping",
+        "title": "Design",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "UX Design",
+        "title": "Design",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "HTML/CSS",
+        "title": "",
+        "description": "Used for messaging between services",
+        "subtitle": ""
+      },
+      {
+        "name": "Tailwind",
+        "title": "Styling",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "title": "Showcase Platform",
+    "client": "Mediaan",
+    "smallDescription": "As a full-stack intern, I developed a centralized showcase platform on Azure using microservices, kubernetes and Single Sign-On. This tool organizes and deploys all internal company projects, providing on-demand access for employee demonstrations and presentations.",
+    "longDescription": "During my internship, I was tasked with solving a significant organizational challenge: the company's many internal projects were scattered, difficult to access, and lacked consistent authentication. My project was to design and develop a centralized showcase platform, creating a single, web-based hub for employees to deploy, view, and demonstrate their work to colleagues and clients.\n\nAs a full-stack developer on this project, I helped build a robust solution using a microservices architecture hosted on Microsoft Azure. The platform integrates with the company's DevOps repository, allowing projects to be deployed and started on-demand. A key feature I worked on was implementing a Single Sign-On (SSO) system, which standardized access and enhanced security across all showcased applications. This project was also a significant learning opportunity, providing my first hands-on experience with technologies like Kubernetes, large-scale microservice structures, and cloud integration with Azure.",
+    "gitUrl": null,
+    "demoUrl": "https://youtu.be/mUHdlzxqXYU",
+    "tags": [
+      {
+        "name": "Typescript",
+        "title": "Frontend",
+        "description": "Dashboard",
+        "subtitle": ""
+      },
+      {
+        "name": "Azure Cloud",
+        "title": "Hosting",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Figma",
+        "title": "Database",
+        "description": "Read and write database for implementing CQRS pattern",
+        "subtitle": ""
+      },
+      {
+        "name": "Prototyping",
+        "title": "Design",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Kubernetes",
+        "title": "CLuster",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "HTML/CSS",
+        "title": "",
+        "description": "Used for messaging between services",
+        "subtitle": ""
+      },
+      {
+        "name": "Tailwind",
+        "title": "Styling",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  }
+]

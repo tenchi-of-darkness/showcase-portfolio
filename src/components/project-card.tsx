@@ -4,13 +4,6 @@ import {Button} from "@/components/ui/button";
 import {ProjectDialog} from "@/components/project-dialog";
 import {TagHover} from "@/components/tag-hover-card";
 
-export enum ProjectCardVariant {
-    Client = 0,
-    School = 1,
-    Internship = 2,
-    Personal = 3
-}
-
 interface Tag {
     name: string;
     title: string;
@@ -23,64 +16,36 @@ export interface ProjectCardProps {
     projectName: string;
     smallDescription: string;
     longDescription: string;
-    variant: ProjectCardVariant;
     demoUrl?: string;
     gitUrl?: string;
     tags: Tag[];
 }
 
-export function ProjectCard({
-                                title,
-                                projectName,
-                                smallDescription,
-                                longDescription,
-                                tags,
-                                variant,
-                                demoUrl,
-                                gitUrl,
-                            }: Readonly<ProjectCardProps>) {
-    let titleString: string;
-
-    switch (variant) {
-        case ProjectCardVariant.Client:
-            titleString = "Client project"
-            break;
-        case ProjectCardVariant.School:
-            titleString = "School project"
-            break;
-        case ProjectCardVariant.Internship:
-            titleString = "Internship project"
-            break;
-        case ProjectCardVariant.Personal:
-            titleString = "Personal project"
-            break;
-        default:
-            titleString = "";
-    }
+export function ProjectCard(props: Readonly<ProjectCardProps>) {
 
     return (
-        <Card className={"p-0"} id={projectName}>
+        <Card className={"p-0 flex flex-col justify-between"} id={props.projectName}>
             <div className={"p-5"}>
                 <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
-                    {projectName}
+                    {props.projectName}
                 </p>
             </div>
             <CardHeader className={"p-3 px-4 pb-0"}>
 
                 <CardTitle className={"text-foreground pt-0"}>
-                    <p className={"mb-2"}>
-                        {projectName}
-                    </p>
+                    <h2 className={"mb-2 text-2xl font-bold"}>
+                        {props.projectName}
+                    </h2>
                     <p>
-                        {title}
+                        {props.title}
                     </p>
                 </CardTitle>
                 <CardDescription className={"text-foreground pt-0"}>
-                    {smallDescription}
+                    {props.smallDescription}
                 </CardDescription>
             </CardHeader>
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
-                {tags.map((tag) => (
+                {props.tags.map((tag) => (
                     <TagHover
                         key={tag.name}
                         tag={tag.name}
@@ -89,20 +54,20 @@ export function ProjectCard({
                         subtitle={tag.subtitle}/>))}
             </CardFooter>
             <div className={"grid grid-cols-2 p-2 gap-5"}>
-                <Activity mode={gitUrl ? "visible" : "hidden"}>
+                <Activity mode={props.gitUrl ? "visible" : "hidden"}>
                     <Button asChild>
-                        <a target={"_blank"} href={gitUrl}>Code</a>
+                        <a target={"_blank"} href={props.gitUrl}>Code</a>
                     </Button>
                 </Activity>
-                <Activity mode={demoUrl ? "visible" : "hidden"}>
+                <Activity mode={props.demoUrl ? "visible" : "hidden"}>
                     <Button asChild>
-                        <a target={"_blank"} href={demoUrl}>Demo</a>
+                        <a target={"_blank"} href={props.demoUrl}>Demo</a>
                     </Button>
                 </Activity>
                 <ProjectDialog
-                    projectName={projectName}
-                    title={title}
-                    longDescription={longDescription}
+                    projectName={props.projectName}
+                    title={props.title}
+                    longDescription={props.longDescription}
                 />
             </div>
         </Card>

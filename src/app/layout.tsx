@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
+import {Noto_Sans, Noto_Sans_Mono} from "next/font/google";
 import "./globals.css";
 import React, {ComponentProps} from "react";
 import {
@@ -11,14 +11,15 @@ import {
 import Link from "next/link";
 import {cn} from "@/lib/utils";
 import {Icon} from "@iconify/react";
+import localFont from "next/dist/compiled/@next/font/dist/local";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
+const notoSans = Noto_Sans({
+    variable: "--font-noto-sans",
     subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-    variable: "--font-geist-mono",
+const notoSansMono = Noto_Sans_Mono({
+    variable: "--font-noto-mono",
     subsets: ["latin"],
 });
 
@@ -50,7 +51,7 @@ export default function RootLayout({children}: Readonly<{
     return (
         <html lang="en">
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+            className={`${notoSans.variable} ${notoSansMono.variable} antialiased bg-background text-foreground font-sans`}
         >
         <NavigationMenu className={"bg-primary text-primary-foreground"}>
             <NavigationMenuList>
@@ -74,10 +75,19 @@ export default function RootLayout({children}: Readonly<{
             </NavigationMenuList>
         </NavigationMenu>
         {children}
-        <footer>
-            <h2>Contact</h2>
+        <footer className={"flex flex-col items-center mb-10"} id={"footer"}>
+            <h1 className={"font-bold text-5xl text-center mt-12 w-fit mb-6"}>Contact me via</h1>
+            <div className={"flex flex-row justify-center"}>
+                <a href="https://github.com/tenchi-of-darkness" target={"_blank"}
+                   className={"px-0.5 hover:bg-transparent text-secondary"}>
+                    <Icon className={"text-secondary size-6"} icon="line-md:github-twotone"/>
+                </a>
+                <a href="https://www.linkedin.com/in/melanie-van-de-graaf/" target={"_blank"}
+                   className={"px-0.5 hover:bg-transparent text-secondary"}>
+                    <Icon className={"text-secondary size-6"} icon="line-md:linkedin"/>
+                </a>
+            </div>
         </footer>
-
         </body>
         </html>
     );
