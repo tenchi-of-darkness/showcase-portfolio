@@ -1,8 +1,8 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
-import {Badge} from "@/components/ui/badge";
 import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
 import {ProjectDialog} from "@/components/project-dialog";
+import {TagHover} from "@/components/tag-hover-card";
 
 export enum ProjectCardVariant {
     Client = 0,
@@ -11,15 +11,22 @@ export enum ProjectCardVariant {
     Personal = 3
 }
 
+interface Tag {
+    name: string;
+    title: string;
+    description: React.ReactElement | string;
+    subtitle: React.ReactElement | string;
+}
+
 export interface ProjectCardProps {
     title: string;
     projectName: string;
     smallDescription: string;
     longDescription: string;
-    tags: string[];
     variant: ProjectCardVariant;
     demoUrl?: string;
     gitUrl?: string;
+    tags: Tag[];
 }
 
 export function ProjectCard({
@@ -61,14 +68,12 @@ export function ProjectCard({
             <CardHeader className={"p-3 px-4 pb-0"}>
 
                 <CardTitle className={"text-foreground pt-0"}>
-                    <p>
+                    <p className={"mb-2"}>
                         {projectName}
                     </p>
                     <p>
                         {title}
                     </p>
-
-
                 </CardTitle>
                 <CardDescription className={"text-foreground pt-0"}>
                     {smallDescription}
@@ -76,7 +81,12 @@ export function ProjectCard({
             </CardHeader>
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
                 {tags.map((tag) => (
-                    <Badge className={"bg-accent text-accent-foreground w-full"} key={tag}>{tag}</Badge>))}
+                    <TagHover
+                        key={tag.name}
+                        tag={tag.name}
+                        title={tag.title}
+                        description={tag.description}
+                        subtitle={tag.subtitle}/>))}
             </CardFooter>
             <div className={"grid grid-cols-2 p-2 gap-5"}>
                 <Activity mode={gitUrl ? "visible" : "hidden"}>

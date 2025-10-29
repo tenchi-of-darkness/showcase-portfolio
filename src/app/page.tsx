@@ -10,7 +10,7 @@ import {SkillLevel} from "@/components/skill-level-bar";
 import {SkillLevelItem} from "@/components/skill-level-item";
 import DigitalRain from "@/components/digital-rain";
 import {ExperienceCard, ExperienceCardVariant} from "@/components/experience-card";
-import {HobbyTagHoverCard} from "@/components/tag-hover-card";
+import {TagHover} from "@/components/tag-hover-card";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh mb-10";
@@ -379,18 +379,138 @@ export default function Home() {
                         projectName={"Green energy"}
                         smallDescription={"This project calculates the most green effecient way to use databases and server accross the world by calculatng where it is most sunny and most windy at that time to utilize the most green energy"}
                         longDescription={"This is a long description"}
-                        tags={["C#", "DotNet", "PostGreSQL", "Rabbit MQ", "Mongo DB"]}
+                        tags={[
+                            {
+                                name: "C#",
+                                title: "Backend in C#",
+                                description: "Microservice architecture ",
+                                subtitle: ""
+                            },
+                            {
+                                name: "DotNet",
+                                title: "Iced coffee or cold brew",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "Hazelnut",
+                                title: "Syrup",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "To go",
+                                title: "Starbucks or local coffee place",
+                                description: "",
+                                subtitle: ""
+                            },
+                        ]}
                         gitUrl={""}
                         demoUrl={""}
                     />
                     <ProjectCard
                         variant={ProjectCardVariant.School}
-                        title={"Chroma"}
+                        title={"fontys"}
                         projectName={"Chroma"}
                         smallDescription={"This project calculates the most green effecient way to use databases and server accross the world by calculatng where it is most sunny and most windy at that time to utilize the most green energy"}
                         longDescription={"This is a long description"}
-                        tags={["C#", "DotNet", "Kubernetes", "Argo CD", "Mongo DB"]}
+                        tags={[
+                            {
+                                name: "C#",
+                                title: "Backend in C#",
+                                description: "Microservice architecture ",
+                                subtitle: ""
+                            },
+                            {
+                                name: "DotNet",
+                                title: "",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "MongoDB",
+                                title: "",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "Rabbit MQ",
+                                title: "",
+                                description: "Used for messaging between services",
+                                subtitle: ""
+                            },
+                        ]}
                         gitUrl={"https://github.com/orgs/Chroma-S6/repositories"}
+                        demoUrl={""}
+                    />
+                    <ProjectCard
+                        variant={ProjectCardVariant.Client}
+                        title={"Fontys"}
+                        projectName={"Smart classroom"}
+                        smallDescription={"This project displays the sensors located in the classroom in a dashboard"}
+                        longDescription={"This is a long description"}
+                        tags={[
+                            {
+                                name: "C#",
+                                title: "Backend in C#",
+                                description: "Microservice architecture ",
+                                subtitle: ""
+                            },
+                            {
+                                name: "DotNet",
+                                title: "Iced coffee or cold brew",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "Hazelnut",
+                                title: "Syrup",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "To go",
+                                title: "Starbucks or local coffee place",
+                                description: "",
+                                subtitle: ""
+                            },
+                        ]}
+                        gitUrl={""}
+                        demoUrl={""}
+                    />
+                    <ProjectCard
+                        variant={ProjectCardVariant.Client}
+                        title={"Mediaan"}
+                        projectName={"Showcase platform"}
+                        smallDescription={"Dashboard to display, start and stop other applications and apps"}
+                        longDescription={"A Microservice architecture, backend in c#"}
+                        tags={[
+                            {
+                                name: "C#",
+                                title: "Backend in C#",
+                                description: "Microservice architecture ",
+                                subtitle: ""
+                            },
+                            {
+                                name: "DotNet",
+                                title: "Iced coffee or cold brew",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "Rabbit MQ",
+                                title: "Syrup",
+                                description: "",
+                                subtitle: ""
+                            },
+                            {
+                                name: "Terraform",
+                                title: "",
+                                description: "A infrastructure tool IaC",
+                                subtitle: ""
+                            },
+                        ]}
+                        gitUrl={""}
                         demoUrl={""}
                     />
                 </div>
@@ -402,15 +522,17 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-10">
                     <ExperienceCard
                         variant={ExperienceCardVariant.Work}
+                        title={"Experience"}
                         name={"Mediaan"}
-                        description={"Fullstack developer"}
-                        tags={["C#", "DotNet", "PostGreSQL", "Terraform", "Mongo DB"]}
+                        smallDescription={"A Microservice architecture, backend in C#"}
+                        longDescription={"Fullstack developer, A Microservice architecture, backend in C#, Dashboard to display, start and stop other applications and apps"}
                     />
                     <ExperienceCard
                         variant={ExperienceCardVariant.Education}
+                        title={"Experience"}
                         name={"Fontys University"}
-                        description={"Bachelor Software Engineer"}
-                        tags={["C#", "DotNet", "PostGreSQL", "Terraform", "Mongo DB"]}
+                        smallDescription={"Bachelor"}
+                        longDescription={"Fullstack developer, choice Software, minor Iot(Industry 4.0) and Frontend development as extra course"}
                     />
                 </div>
             </section>
