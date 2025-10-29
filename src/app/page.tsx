@@ -54,15 +54,18 @@ export default function Home() {
                             <p className={"mb-3"}>
                                 Hi! I’m a fullstack developer who loves diving into complex projects that solve real
                                 problems. I’m most at home working with C# in Rider and Next.JS/Typescript in Webstorm,
-                                exploring new ideas with curiosity and focus. Music is my coding companion, from hardstyle
+                                exploring new ideas with curiosity and focus. Music is my coding companion, from
+                                hardstyle
                                 and drum & bass to metal, it keeps me in the zone.
-                                I’m spontaneous, a bit sarcastic, endlessly curious, and driven by empathy in everything I
+                                I’m spontaneous, a bit sarcastic, endlessly curious, and driven by empathy in everything
+                                I
                                 do.
                             </p>
                             <p>
                                 Outside of coding, you will find me reading books of Stephen King or other authors,
                                 sketching, dancing at festivals, Going to theme parks or playing D&D with friends. I’m
-                                fascinated by facts and discoveries about space, our planet, and the universe, and I love
+                                fascinated by facts and discoveries about space, our planet, and the universe, and I
+                                love
                                 spending time in nature, especially when I can walk under a starry night sky.
                             </p>
                         </div>
@@ -372,16 +375,20 @@ export default function Home() {
                 <div className="grid grid-cols-2 gap-10">
                     <ProjectCard
                         variant={ProjectCardVariant.Client}
-                        name={"Sue"}
-                        description={"Green energy"}
+                        title={"Sue"}
+                        projectName={"Green energy"}
+                        smallDescription={"This project calculates the most green effecient way to use databases and server accross the world by calculatng where it is most sunny and most windy at that time to utilize the most green energy"}
+                        longDescription={"This is a long description"}
                         tags={["C#", "DotNet", "PostGreSQL", "Rabbit MQ", "Mongo DB"]}
                         gitUrl={""}
                         demoUrl={""}
                     />
                     <ProjectCard
                         variant={ProjectCardVariant.School}
-                        name={"Chroma"}
-                        description={"Enterprise software project. An Instagram clone"}
+                        title={"Chroma"}
+                        projectName={"Chroma"}
+                        smallDescription={"This project calculates the most green effecient way to use databases and server accross the world by calculatng where it is most sunny and most windy at that time to utilize the most green energy"}
+                        longDescription={"This is a long description"}
                         tags={["C#", "DotNet", "Kubernetes", "Argo CD", "Mongo DB"]}
                         gitUrl={"https://github.com/orgs/Chroma-S6/repositories"}
                         demoUrl={""}
@@ -406,10 +413,6 @@ export default function Home() {
                         tags={["C#", "DotNet", "PostGreSQL", "Terraform", "Mongo DB"]}
                     />
                 </div>
-            </section>
-
-            <section className={sectionClassName} id={"contact"}>
-                <h2 className={sectionTitleClassName}>Contact</h2>
             </section>
 
         </div>

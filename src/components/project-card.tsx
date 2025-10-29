@@ -2,6 +2,7 @@ import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/compon
 import {Badge} from "@/components/ui/badge";
 import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
+import {ProjectDialog} from "@/components/project-dialog";
 
 export enum ProjectCardVariant {
     Client = 0,
@@ -11,8 +12,10 @@ export enum ProjectCardVariant {
 }
 
 export interface ProjectCardProps {
-    name: string;
-    description: string;
+    title: string;
+    projectName: string;
+    smallDescription: string;
+    longDescription: string;
     tags: string[];
     variant: ProjectCardVariant;
     demoUrl?: string;
@@ -20,12 +23,14 @@ export interface ProjectCardProps {
 }
 
 export function ProjectCard({
-                                name,
-                                description,
+                                title,
+                                projectName,
+                                smallDescription,
+                                longDescription,
                                 tags,
                                 variant,
                                 demoUrl,
-                                gitUrl
+                                gitUrl,
                             }: Readonly<ProjectCardProps>) {
     let titleString: string;
 
@@ -54,11 +59,19 @@ export function ProjectCard({
                 </p>
             </div>
             <CardHeader className={"p-3 px-4 pb-0"}>
+
                 <CardTitle className={"text-foreground pt-0"}>
-                    {name}
+                    <p>
+                        {projectName}
+                    </p>
+                    <p>
+                        {title}
+                    </p>
+
+
                 </CardTitle>
                 <CardDescription className={"text-foreground pt-0"}>
-                    {description}
+                    {smallDescription}
                 </CardDescription>
             </CardHeader>
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
@@ -73,9 +86,14 @@ export function ProjectCard({
                 </Activity>
                 <Activity mode={demoUrl ? "visible" : "hidden"}>
                     <Button asChild>
-                        <a target={"_blank"}  href={demoUrl}>Demo</a>
+                        <a target={"_blank"} href={demoUrl}>Demo</a>
                     </Button>
                 </Activity>
+                <ProjectDialog
+                    projectName={projectName}
+                    title={title}
+                    longDescription={longDescription}
+                />
             </div>
         </Card>
     )

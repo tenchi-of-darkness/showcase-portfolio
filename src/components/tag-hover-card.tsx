@@ -31,7 +31,7 @@ export function HobbyTagHoverCard({
                         <p className="text-sm">
                             {description}
                         </p>
-                        <p className="text-primary text-xs">
+                        <p className="text-secondary-foreground text-xs">
                             {subtitle}
                         </p>
                     </div>

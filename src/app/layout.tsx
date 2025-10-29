@@ -74,6 +74,10 @@ export default function RootLayout({children}: Readonly<{
             </NavigationMenuList>
         </NavigationMenu>
         {children}
+        <footer>
+            <h2>Contact</h2>
+        </footer>
+
         </body>
         </html>
     );
