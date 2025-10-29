@@ -8,7 +8,8 @@ interface Tag {
     name: string;
     title: string;
     description: React.ReactElement | string;
-    subtitle: React.ReactElement | string;
+    subtitle?: React.ReactElement | string;
+    projectNames?: string[];
 }
 
 export interface SkillCardProps {
@@ -16,7 +17,6 @@ export interface SkillCardProps {
     description: string;
     tags: Tag[];
     iconProps: ComponentProps<typeof Icon>;
-
 }
 
 export function SkillCard({
@@ -24,7 +24,7 @@ export function SkillCard({
                               name,
                               description,
                               tags,
-                          }: SkillCardProps) {
+                          }: Readonly<SkillCardProps>) {
     return (
         <Card className={"p-0"}>
             <CardHeader className={"p-3 px-4 pb-0"}>
@@ -40,13 +40,27 @@ export function SkillCard({
                 </CardDescription>
             </CardHeader>
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
-                {tags.map((tag) => (
-                    <TagHover
-                        key={tag.name}
-                        tag={tag.name}
-                        title={tag.title}
-                        description={tag.description}
-                        subtitle={<a href={"/#Chroma"}>{tag.subtitle}</a>}/>))}
+                {tags.map((tag, i) => {
+                    let subtitle = <></>
+                    if (tag.projectNames) {
+                        const projectAnchors = tag.projectNames.map((projectName, j) => {
+                            return <span key={j}>
+                                {j !== 0 ? ", " : undefined}
+                                <a key={projectName} href={"/#" + projectName}>{projectName}</a>
+                            </span>
+                        })
+                        subtitle = <>Used in {projectAnchors}</>
+                    } else {
+                        subtitle = <>{tag.subtitle}</>;
+                    }
+                    return (
+                        <TagHover
+                            key={i}
+                            tag={tag.name}
+                            title={tag.title}
+                            description={tag.description}
+                            subtitle={subtitle}/>);
+                })}
             </CardFooter>
         </Card>
     );

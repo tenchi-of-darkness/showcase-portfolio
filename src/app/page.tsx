@@ -335,7 +335,7 @@ export default function Home() {
                                        name: "C#",
                                        title: ".NET",
                                        description: "Backend Development, Microservice architecture",
-                                       subtitle: "Used in Chroma"
+                                       projectNames: ["Chroma", "Green energy"]
                                    },
                                    {
                                        name: "PostgreSQL",
