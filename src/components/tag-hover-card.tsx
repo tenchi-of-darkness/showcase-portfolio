@@ -13,7 +13,7 @@ export interface HobbyCardProps {
     tag: string;
 }
 
-export function HobbyTagHoverCard({
+export function TagHover({
                                       title,
                                       description,
                                       subtitle,
