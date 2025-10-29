@@ -10,7 +10,6 @@ import {SkillLevel} from "@/components/skill-level-bar";
 import {SkillLevelItem} from "@/components/skill-level-item";
 import DigitalRain from "@/components/digital-rain";
 import {ExperienceCard, ExperienceCardVariant} from "@/components/experience-card";
-import {TagHover} from "@/components/tag-hover-card";
 
 export default function Home() {
     const sectionClassName = "min-h-dvh mb-10";
