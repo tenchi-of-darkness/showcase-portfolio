@@ -30,7 +30,7 @@ export function ProjectDialog({
                     {projectName}
                     <DialogTitle>{title}</DialogTitle>
                     <DialogDescription className={"text-foreground"}>
-                        {longDescription.split("\n").map((text, i) => <p className={"mb-1"} key={i}>{text}</p>)}
+                        {longDescription.split("\n").map((text, i) => <span className={"mb-1 block"} key={i}>{text}</span>)}
                     </DialogDescription>
                 </DialogHeader>
             </DialogContent>
