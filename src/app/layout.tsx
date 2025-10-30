@@ -53,7 +53,7 @@ export default function RootLayout({children}: Readonly<{
         <body
             className={`${notoSans.variable} ${notoSansMono.variable} antialiased bg-background text-foreground font-sans`}
         >
-        <NavigationMenu className={"bg-primary text-primary-foreground"}>
+        <NavigationMenu className={"bg-primary text-primary-foreground z-100"}>
             <NavigationMenuList>
                 <NavLink href={"/"}>Melanie</NavLink>
             </NavigationMenuList>
