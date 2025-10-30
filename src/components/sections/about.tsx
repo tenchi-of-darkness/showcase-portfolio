@@ -1,5 +1,6 @@
 import {HobbyCard} from "@/components/hobby-card";
 import React from "react";
+import hobbiesData from "@/data/hobbies.json"
 
 export function AboutSection() {
     return <>
@@ -53,192 +54,14 @@ export function AboutSection() {
             <div className="w-1/2 flex flex-col">
                 <p className={"font-bold text-2xl text-center mb-4 mt-3"}>Hobbies and interests</p>
                 <div className="grid grid-cols-2 grid-rows-3 gap-2">
-                    <HobbyCard
-                        name={"Listen music"}
-                        tags={[
-                            {
-                                name: "D&B",
-                                title: "Neurofunk",
-                                description: "Black Sun Empire, Sinister Souls, Delta Heavy, A.M.C",
-                                subtitle: "Favourite song: Back down by Black Sun Empire"
-                            },
-                            {
-                                name: "Hardstyle",
-                                title: "Raw",
-                                description: "Delete, The Smiler, Spoontech, DEEZL, Faceless ",
-                                subtitle: "Favourite song: Explosion by Delete",
-                            },
-                            {
-                                name: "EDM",
-                                title: "Electronic",
-                                description: "Flume",
-                                subtitle: "Favourite song: Shine, Glow, Glisten by Flume"
-                            },
-                            {
-                                name: "Metal",
-                                title: "",
-                                description: "System of a Down, Slipknot",
-                                subtitle: "Favourite song: Chop Suey by System of a Down"
-                            },
-                        ]}
-                        id={""}
-                        iconProps={{icon: "arcticons:vibe-music"}}/>
-                    <HobbyCard
-                        name={"Hobby"}
-                        tags={[
-                            {
-                                name: "Thriller",
-                                title: "Nicci French",
-                                description: "The unheard",
-                                subtitle: "Memory is a lie, a creative act, a flimsy shield against the truth -The unheard"
-                            },
-                            {
-                                name: "Sci-fi",
-                                title: "Pierce Brown",
-                                description: "Red Rising Series",
-                                subtitle: "Typical science fiction"
-                            },
-                            {
-                                name: "Fantasy",
-                                title: "Deborah Harkness",
-                                description: "A Discovery of Witches series",
-                                subtitle: "Vampires, witches, witchcraft, romance and alchemy"
-                            },
-                            {
-                                name: "Horror",
-                                title: "Stephen King",
-                                description: "Fairy tale, The institute",
-                                subtitle: "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win -Stephen King"
-                            },
-                            {
-                                name: "Dystopian",
-                                title: "James Dashner",
-                                description: "The Maze runner series",
-                                subtitle: "sometimes you don't look very hard for things you don't believe will or can happen. --The Maze runner"
-                            }
-                        ]}
-                        id={""}
-                        iconProps={{icon: "arcticons:cool-reader"}}/>
-                    <HobbyCard
-                        name={"Festivals"}
-                        tags={[
-                            {
-                                name: "Defqon",
-                                title: "Hardstyle",
-                                description: "Four day festival",
-                                subtitle: "Sacred Oath"
-                            },
-                            {
-                                name: "Decibel",
-                                title: "Hardstyle",
-                                description: "Three day festival",
-                                subtitle: "Natures Rhythm"
-                            },
-                            {
-                                name: "Spoontech",
-                                title: "Hardstyle",
-                                description: "One day party",
-                                subtitle: "Klaplong all day"
-                            },
-                            {
-                                name: "Liquicity",
-                                title: "Drum and bass",
-                                description: "Three day festival",
-                                subtitle: "Dance the whole weekend",
-                            },
-                        ]}
-                        id={""}
-                        iconProps={{icon: "arcticons:qdance"}}/>
-                    <HobbyCard
-                        name={"Gaming"}
-                        tags={[
-                            {
-                                name: "Simulator",
-                                title: "The Sims",
-                                description: "Build and create a sim",
-                                subtitle: ""
-                            },
-                            {
-                                name: "FPS",
-                                title: "Borderlands",
-                                description: "Played all mainline games",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Cozy",
-                                title: "Stardew Vally",
-                                description: "Farming games to relax",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Action",
-                                title: "Horizon",
-                                description: "Great game with a fantastic story",
-                                subtitle: ""
-                            },
-                        ]}
-                        id={""}
-                        iconProps={{icon: "ion:game-controller-outline"}}/>
-                    <HobbyCard
-                        name={"Drinking Coffee"}
-                        tags={[
-                            {
-                                name: "Hot",
-                                title: "Cappuccino without sugar",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Cold",
-                                title: "Iced coffee or cold brew",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Hazelnut",
-                                title: "Syrup",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "To go",
-                                title: "Starbucks or local coffee place",
-                                description: "",
-                                subtitle: ""
-                            },
-                        ]}
-                        id={""}
-                        iconProps={{icon: "hugeicons:coffee-02"}}/>
-                    <HobbyCard
-                        name={"Lego"}
-                        tags={[
-                            {
-                                name: "Collect",
-                                title: "",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Build",
-                                title: "",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Moc",
-                                title: "",
-                                description: "",
-                                subtitle: ""
-                            },
-                            {
-                                name: "Achieve",
-                                title: "",
-                                description: "",
-                                subtitle: ""
-                            },
-                        ]}
-                        id={""}
-                        iconProps={{icon: "lucide:toy-brick"}}/>
+                    {hobbiesData.map((hobby, i) => (
+                        <HobbyCard
+                            key = {i}
+                            name={hobby.name}
+                            tags={hobby.tags}
+                            id={hobby.id}
+                            iconProps={{icon: hobby.iconName}}/>
+                    ))}
                 </div>
             </div>
         </div>

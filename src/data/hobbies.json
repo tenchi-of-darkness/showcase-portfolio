@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Listen music",
+    "iconName": "arcticons:vibe-music",
+    "id": "",
+    "tags": [
+      {
+        "name": "D&B",
+        "title": "Neurofunk",
+        "description": "Black Sun Empire, Sinister Souls, Delta Heavy, A.M.C",
+        "subtitle": "Favourite song: Back down by Black Sun Empire"
+      },
+      {
+        "name": "Hardstyle",
+        "title": "Raw",
+        "description": "Delete, The Smiler, Spoontech, DEEZL, Faceless ",
+        "subtitle": "Favourite song: Explosion by Delete"
+      },
+      {
+        "name": "EDM",
+        "title": "Electronic",
+        "description": "Flume",
+        "subtitle": "Favourite song: Shine, Glow, Glisten by Flume"
+      },
+      {
+        "name": "Metal",
+        "title": "",
+        "description": "System of a Down, Slipknot",
+        "subtitle": "Favourite song: Chop Suey by System of a Down"
+      }
+    ]
+  },
+  {
+    "name": "Reading",
+    "id": "",
+    "iconName": "arcticons:cool-reader",
+    "tags": [
+      {
+        "name": "Thriller",
+        "title": "Nicci French",
+        "description": "The unheard",
+        "subtitle": "Memory is a lie, a creative act, a flimsy shield against the truth -The unheard"
+      },
+      {
+        "name": "Sci-fi",
+        "title": "Pierce Brown",
+        "description": "Red Rising Series",
+        "subtitle": "Typical science fiction"
+      },
+      {
+        "name": "Fantasy",
+        "title": "Deborah Harkness",
+        "description": "A Discovery of Witches series",
+        "subtitle": "Vampires, witches, witchcraft, romance and alchemy"
+      },
+      {
+        "name": "Horror",
+        "title": "Stephen King",
+        "description": "Fairy tale, The institute",
+        "subtitle": "Monsters are real, and ghosts are real too. They live inside us, and sometimes, they win -Stephen King"
+      },
+      {
+        "name": "Dystopian",
+        "title": "James Dashner",
+        "description": "The Maze runner series",
+        "subtitle": "sometimes you don't look very hard for things you don't believe will or can happen. --The Maze runner"
+      }
+    ]
+  },
+  {
+    "name": "Festivals",
+    "id": "",
+    "iconName": "arcticons:qdance",
+    "tags": [
+      {
+        "name": "Defqon",
+        "title": "Hardstyle",
+        "description": "Four day festival",
+        "subtitle": "Sacred Oath"
+      },
+      {
+        "name": "Decibel",
+        "title": "Hardstyle",
+        "description": "Three day festival",
+        "subtitle": "Natures Rhythm"
+      },
+      {
+        "name": "Spoontech",
+        "title": "Hardstyle",
+        "description": "One day party",
+        "subtitle": "Klaplong all day"
+      },
+      {
+        "name": "Liquicity",
+        "title": "Drum and bass",
+        "description": "Three day festival",
+        "subtitle": "Dance the whole weekend"
+      }
+    ]
+  },
+  {
+    "name": "Gaming",
+    "id": "",
+    "iconName": "ion:game-controller-outline",
+    "tags": [
+      {
+        "name": "Simulator",
+        "title": "The Sims",
+        "description": "Build and create a sim",
+        "subtitle": ""
+      },
+      {
+        "name": "FPS",
+        "title": "Borderlands",
+        "description": "Played all mainline games",
+        "subtitle": ""
+      },
+      {
+        "name": "Cozy",
+        "title": "Stardew Vally",
+        "description": "Farming games to relax",
+        "subtitle": ""
+      },
+      {
+        "name": "Action",
+        "title": "Horizon",
+        "description": "Great game with a fantastic story",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "name": "Drinking Coffee",
+    "id": "",
+    "iconName": "hugeicons:coffee-02",
+    "tags": [
+      {
+        "name": "Hot",
+        "title": "Cappuccino without sugar",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Cold",
+        "title": "Iced coffee or cold brew",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Hazelnut",
+        "title": "Syrup",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "To go",
+        "title": "Starbucks or local coffee place",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "name": "Lego",
+    "id": "",
+    "iconName": "lucide:toy-brick",
+    "tags": [
+      {
+        "name": "Collect",
+        "title": "",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Build",
+        "title": "",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Moc",
+        "title": "",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Achieve",
+        "title": "",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  }
+]

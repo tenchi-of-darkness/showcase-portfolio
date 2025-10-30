@@ -1,0 +1,218 @@
+[
+  {
+    "name": "Backend",
+    "description": "The Logic of the application",
+    "iconName": "icon-park-outline:source-code",
+    "tags": [
+      {
+        "name": "C#",
+        "title": ".NET",
+        "description": "Backend Development, Microservice architecture",
+        "projectNames": ["Chroma", "Green Energy Workload Scheduler", "Showcase platform"]
+      },
+      {
+        "name": "PostgreSQL",
+        "title": "Database",
+        "description": "",
+        "projectNames": ["Chroma", "Green Energy Workload Scheduler", "Showcase platform"]
+      },
+      {
+        "name": "MongoDB",
+        "title": "Database",
+        "description": "",
+        "projectNames": ["Smart Classroom"]
+      },
+      {
+        "name": "RabbitMQ",
+        "title": "Message bus",
+        "description": "",
+        "projectNames": ["Chroma", "Green Energy Workload Scheduler"]
+      }
+    ]
+  },
+  {
+    "name": "Cloud & Devops",
+    "description": "Deployment",
+    "iconName": "icon-park-outline:source-code",
+    "tags": [
+      {
+        "name": "Azure",
+        "title": ".NET",
+        "description": "Cloud & Devops",
+        "projectNames": ["Chroma", "Showcase platform"]
+      },
+      {
+        "name": "Docker",
+        "title": "Containerisation",
+        "description": "",
+        "projectNames": ["Chroma", "Green Energy Workload Scheduler", "Smart Classroom", "Showcase platform"]
+      },
+      {
+        "name": "Argo CD",
+        "title": "Deployment management",
+        "description": "Kubernetes",
+        "projectNames": ["Chroma"]
+      },
+      {
+        "name": "Kubernetes",
+        "title": "Deployment",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Green Energy Workload Scheduler"]
+      },
+      {
+        "name": "Terraform",
+        "title": "Infrastructure as code",
+        "description": "Kubernetes",
+        "projectNames": ["Showcase Platform"]
+      }
+    ]
+  },
+  {
+    "name": "Frontend",
+    "description": "This is a description",
+    "iconName": "solar:code-2-linear",
+    "tags": [
+      {
+        "name": "Next.JS",
+        "title": "Frontend",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Smart Classroom"]
+      },
+      {
+        "name": "TypeScript",
+        "title": "Frontend",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Smart Classroom"]
+      },
+      {
+        "name": "HTML",
+        "title": "",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform"]
+      },
+      {
+        "name": "Tailwind",
+        "title": "",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Smart Classroom"]
+      },
+      {
+        "name": "CSS",
+        "title": "",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Smart Classroom"]
+      }
+    ]
+  },
+  {
+    "name": "Design & UX",
+    "description": "",
+    "iconName": "heroicons:paint-brush",
+    "tags": [
+      {
+        "name": "Figma",
+        "title": "Web tool for designing interfaces",
+        "description": "",
+        "projectNames": ["Chroma", "Showcase Platform", "Smart Classroom"]
+      },
+      {
+        "name": "Prototyping",
+        "title": "Iteration process",
+        "description": "",
+        "projectNames": ["Showcase Platform", "Smart Classroom"]
+      },
+      {
+        "name": "User Research",
+        "title": "Testing",
+        "description": "",
+        "projectNames": ["Smart Classroom"]
+      },
+      {
+        "name": "UX Design",
+        "title": "Designing with the user experience in mind",
+        "description": "",
+        "projectNames": ["Smart Classroom"]
+      }
+    ]
+  },
+  {
+    "name": "Tools & Technology",
+    "description": "",
+    "iconName": "arcticons:git",
+    "tags": [
+      {
+        "name": "Git",
+        "title": ".NET",
+        "description": "",
+        "projectNames": ["Showcase Platform", "Smart Classroom", "Chroma", "Green Energy Workload Scheduler"]
+      },
+      {
+        "name": "Rider",
+        "title": "IDE",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Webstorm",
+        "title": "IDE",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "VS Code",
+        "title": "IDE",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Postman",
+        "title": "Test API's",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Azure Pipelines",
+        "title": "Deployment",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Trello",
+        "title": "Project management",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "name": "Soft Skills",
+    "description": "",
+    "iconName": "lets-icons:user",
+    "tags": [
+      {
+        "name": "Agile",
+        "title": "Scrum",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Creativity",
+        "title": "Thinking outside of the box",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Communication",
+        "title": "Dutch, English, German",
+        "description": "Native Dutch speaker, fluent in English, with conversational German for non-technical topics",
+        "subtitle": ""
+      },
+      {
+        "name": "Project Management",
+        "title": "Team Leadership",
+        "description": "",
+        "subtitle": ""
+      }
+    ]
+  }
+]
