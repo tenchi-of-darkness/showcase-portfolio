@@ -11,7 +11,6 @@ import {
 import Link from "next/link";
 import {cn} from "@/lib/utils";
 import {Icon} from "@iconify/react";
-import localFont from "next/dist/compiled/@next/font/dist/local";
 
 const notoSans = Noto_Sans({
     variable: "--font-noto-sans",
