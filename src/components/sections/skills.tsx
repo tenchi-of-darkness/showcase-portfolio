@@ -11,25 +11,25 @@ export function SkillsSection() {
                                name: "C#",
                                title: ".NET",
                                description: "Backend Development, Microservice architecture",
-                               projectNames: ["Chroma", "Green energy"]
+                               projectNames: ["Chroma", "Green Energy Workload Scheduler"]
                            },
                            {
                                name: "PostgreSQL",
                                title: "Database",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Green Energy Workload Scheduler"]
                            },
                            {
                                name: "MongoDB",
                                title: "Database",
-                               description: "",
+                               description: "Smart Classroom",
                                subtitle: ""
                            },
                            {
                                name: "RabbitMQ",
                                title: "Message bus",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Green Energy Workload Scheduler"]
                            },
                        ]}
                        iconProps={{icon: "icon-park-outline:source-code"}}/>
@@ -39,31 +39,31 @@ export function SkillsSection() {
                                name: "Azure",
                                title: ".NET",
                                description: "Cloud & Devops",
-                               subtitle: ""
+                               projectNames: ["Chroma"]
                            },
                            {
                                name: "Docker",
                                title: "Containerisation",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma"]
                            },
                            {
                                name: "Argo CD",
                                title: "Deployment management",
                                description: "Kubernetes",
-                               subtitle: ""
+                               projectNames: ["Chroma"]
                            },
                            {
                                name: "Kubernetes",
                                title: "Deployment",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform"]
                            },
                            {
                                name: "Terraform",
                                title: "Infrastructure as code",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Showcase Platform"]
                            },
 
                        ]}
@@ -74,23 +74,23 @@ export function SkillsSection() {
                                name: "React",
                                title: "Frontend",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Smart Classroom"]
                            },
                            {
                                name: "Next.JS",
                                title: "Frontend",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform"]
                            },
                            {
                                name: "TypeScript",
-                               title: "",
+                               title: "Frontend",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "JavaScript",
-                               title: "",
+                               title: "Frontend",
                                description: "",
                                subtitle: ""
                            },
@@ -98,19 +98,19 @@ export function SkillsSection() {
                                name: "HTML",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform"]
                            },
                            {
                                name: "Tailwind",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform", "Smart Classroom"]
                            },
                            {
                                name: "CSS",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform", "Smart Classroom"]
                            },
 
                        ]}
@@ -121,25 +121,25 @@ export function SkillsSection() {
                                name: "Figma",
                                title: ".NET",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Chroma", "Showcase Platform", "Smart Classroom"]
                            },
                            {
                                name: "Prototyping",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Showcase Platform", "Smart Classroom"]
                            },
                            {
                                name: "User Research",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Smart Classroom"]
                            },
                            {
                                name: "UX Design",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Smart Classroom"]
                            },
                        ]}
                        iconProps={{icon: "heroicons:paint-brush"}}/>
@@ -149,19 +149,19 @@ export function SkillsSection() {
                                name: "Git",
                                title: ".NET",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Showcase Platform", "Smart Classroom", "Chroma", "Green Energy Workload Scheduler"]
                            },
                            {
                                name: "Rider",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Showcase Platform", "Smart Classroom", "Chroma", "Green Energy Workload Scheduler"]
                            },
                            {
                                name: "Webstorm",
                                title: "",
                                description: "",
-                               subtitle: ""
+                               projectNames: ["Showcase Platform", "Smart Classroom", "Chroma", "Green Energy Workload Scheduler"]
                            },
                            {
                                name: "VS Code",

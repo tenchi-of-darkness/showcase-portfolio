@@ -56,7 +56,7 @@ export function LandingSection() {
                 </p>
             </div>
             <Button asChild>
-                <Link href={"/public#projects"} className={"bg-primary mt-5 text-white p-2"}>View my
+                <Link href={"/#projects"} className={"bg-primary mt-5 text-white p-2"}>View my
                     projects</Link>
             </Button>
         </div>

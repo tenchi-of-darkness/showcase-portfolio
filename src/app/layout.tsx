@@ -59,7 +59,6 @@ export default function RootLayout({children}: Readonly<{
             </NavigationMenuList>
             <NavigationMenuList>
                 <NavLink href={"/#about"}>About</NavLink>
-
                 <NavLink href={"/#skills"}>Skills</NavLink>
                 <NavLink href={"/#proficiencies"}>Proficiencies</NavLink>
                 <NavLink href={"/#projects"}>Projects</NavLink>
