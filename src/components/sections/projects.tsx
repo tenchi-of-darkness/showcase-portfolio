@@ -17,6 +17,7 @@ export function ProjectsSection() {
                     tags={item.tags}
                     gitUrl={item.gitUrl ?? undefined}
                     demoUrl={item.demoUrl ?? undefined}
+                    design={item.design}
                 />
             ))}
         </div>

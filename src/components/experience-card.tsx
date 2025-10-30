@@ -1,6 +1,6 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import React from "react";
-import {ProjectDialog} from "@/components/project-dialog";
+import {ProjectDescriptionDialog} from "@/components/project-description-dialog";
 
 export enum ExperienceCardVariant {
     Work = 0,
@@ -60,7 +60,7 @@ export function ExperienceCard({
             <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
             </CardFooter>
             <div className={"flex justify-center mb-2"}>
-                <ProjectDialog
+                <ProjectDescriptionDialog
                     title={title}
                     projectName={name}
                     longDescription={longDescription}

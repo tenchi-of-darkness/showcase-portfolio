@@ -9,17 +9,17 @@ import {
 import React from "react";
 import {Button} from "@/components/ui/button";
 
-export interface ProjectDialogProps {
+export interface ProjectDescriptionDialogProps {
     title: string;
     projectName: string;
     longDescription: string;
 }
 
-export function ProjectDialog({
+export function ProjectDescriptionDialog({
                                   title,
                                   projectName,
                                   longDescription,
-                              }: ProjectDialogProps) {
+                              }: ProjectDescriptionDialogProps) {
     return (
         <Dialog>
             <DialogTrigger asChild>
@@ -29,10 +29,10 @@ export function ProjectDialog({
                 <DialogHeader>
                     {projectName}
                     <DialogTitle>{title}</DialogTitle>
-                    <DialogDescription className={"text-foreground"}>
-                        {longDescription.split("\n").map((text, i) => <span className={"mb-1 block"} key={i}>{text}</span>)}
-                    </DialogDescription>
                 </DialogHeader>
+                <DialogDescription className={"text-foreground"}>
+                    {longDescription.split("\n").map((text, i) => <span className={"mb-1 block"} key={i}>{text}</span>)}
+                </DialogDescription>
             </DialogContent>
         </Dialog>
     );

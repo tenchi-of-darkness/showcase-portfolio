@@ -1,8 +1,9 @@
 import {Card, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
 import React, {Activity} from "react";
 import {Button} from "@/components/ui/button";
-import {ProjectDialog} from "@/components/project-dialog";
+import {ProjectDescriptionDialog} from "@/components/project-description-dialog";
 import {TagHover} from "@/components/tag-hover-card";
+import {ProjectDesignDialog} from "@/components/project-design-dialog";
 
 interface Tag {
     name: string;
@@ -19,6 +20,10 @@ export interface ProjectCardProps {
     demoUrl?: string;
     gitUrl?: string;
     tags: Tag[];
+    design?: {
+        title: string;
+        imageSrc: string;
+    }
 }
 
 export function ProjectCard(props: Readonly<ProjectCardProps>) {
@@ -53,22 +58,29 @@ export function ProjectCard(props: Readonly<ProjectCardProps>) {
                         description={tag.description}
                         subtitle={tag.subtitle}/>))}
             </CardFooter>
-            <div className={"grid grid-cols-2 p-2 gap-5"}>
-                <Activity mode={props.gitUrl ? "visible" : "hidden"}>
-                    <Button asChild>
-                        <a target={"_blank"} href={props.gitUrl}>Code</a>
-                    </Button>
-                </Activity>
+            <div className={"grid grid-cols-2 p-2 gap-2"}>
+                <ProjectDescriptionDialog
+                    projectName={props.projectName}
+                    title={props.title}
+                    longDescription={props.longDescription}
+                />
+                {
+                    props.design&&<ProjectDesignDialog
+                        title={props.design.title}
+                        imageSrc={props.design.imageSrc}
+                    />
+                }
+
                 <Activity mode={props.demoUrl ? "visible" : "hidden"}>
                     <Button asChild>
                         <a target={"_blank"} href={props.demoUrl}>Demo</a>
                     </Button>
                 </Activity>
-                <ProjectDialog
-                    projectName={props.projectName}
-                    title={props.title}
-                    longDescription={props.longDescription}
-                />
+                <Activity mode={props.gitUrl ? "visible" : "hidden"}>
+                    <Button asChild>
+                        <a target={"_blank"} href={props.gitUrl}>Code</a>
+                    </Button>
+                </Activity>
             </div>
         </Card>
     )
