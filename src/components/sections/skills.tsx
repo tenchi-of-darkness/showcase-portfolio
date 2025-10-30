@@ -15,19 +15,19 @@ export function SkillsSection() {
                            },
                            {
                                name: "PostgreSQL",
-                               title: "",
+                               title: "Database",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "MongoDB",
-                               title: "",
+                               title: "Database",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "RabbitMQ",
-                               title: "",
+                               title: "Message bus",
                                description: "",
                                subtitle: ""
                            },
@@ -38,30 +38,30 @@ export function SkillsSection() {
                            {
                                name: "Azure",
                                title: ".NET",
-                               description: "",
+                               description: "Cloud & Devops",
                                subtitle: ""
                            },
                            {
                                name: "Docker",
-                               title: "",
+                               title: "Containerisation",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "Argo CD",
-                               title: "",
-                               description: "",
+                               title: "Deployment management",
+                               description: "Kubernetes",
                                subtitle: ""
                            },
                            {
                                name: "Kubernetes",
-                               title: "",
+                               title: "Deployment",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "Terraform",
-                               title: "",
+                               title: "Infrastructure as code",
                                description: "",
                                subtitle: ""
                            },
@@ -72,13 +72,13 @@ export function SkillsSection() {
                        tags={[
                            {
                                name: "React",
-                               title: ".NET",
+                               title: "Frontend",
                                description: "",
                                subtitle: ""
                            },
                            {
                                name: "Next.JS",
-                               title: "",
+                               title: "Frontend",
                                description: "",
                                subtitle: ""
                            },
