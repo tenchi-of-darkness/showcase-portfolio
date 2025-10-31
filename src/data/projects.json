@@ -133,7 +133,7 @@
     "smallDescription": "As a full-stack intern, I developed a centralized showcase platform on Azure using microservices, kubernetes and Single Sign-On. This tool organizes and deploys all internal company projects, providing on-demand access for employee demonstrations and presentations.",
     "longDescription": "During my internship, I was tasked with solving a significant organizational challenge: the company's many internal projects were scattered, difficult to access, and lacked consistent authentication. My project was to design and develop a centralized showcase platform, creating a single, web-based hub for employees to deploy, view, and demonstrate their work to colleagues and clients.\n\nAs a full-stack developer on this project, I helped build a robust solution using a microservices architecture hosted on Microsoft Azure. The platform integrates with the company's DevOps repository, allowing projects to be deployed and started on-demand. A key feature I worked on was implementing a Single Sign-On (SSO) system, which standardized access and enhanced security across all showcased applications. This project was also a significant learning opportunity, providing my first hands-on experience with technologies like Kubernetes, large-scale microservice structures, and cloud integration with Azure.",
     "gitUrl": null,
-    "demoUrl": "https://youtu.be/mUHdlzxqXYU",
+    "demoUrl": "",
     "tags": [
       {
         "name": "Typescript",

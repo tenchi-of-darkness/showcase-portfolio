@@ -14,13 +14,13 @@ export interface HobbyCardProps {
 }
 
 export function TagHover({
-                                      title,
-                                      description,
-                                      subtitle,
-                                      tag,
-                                  }: Readonly<HobbyCardProps>) {
+                             title,
+                             description,
+                             subtitle,
+                             tag,
+                         }: Readonly<HobbyCardProps>) {
     return (
-        <HoverCard>
+        <HoverCard openDelay={500}>
             <HoverCardTrigger asChild>
                 <Badge className={"bg-accent text-accent-foreground w-full"}>{tag}</Badge>
             </HoverCardTrigger>
