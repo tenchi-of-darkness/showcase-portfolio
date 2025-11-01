@@ -78,11 +78,11 @@ export default function RootLayout({children}: Readonly<{
             <div className={"flex flex-row justify-center"}>
                 <a href="https://github.com/tenchi-of-darkness" target={"_blank"}
                    className={"px-0.5 hover:bg-transparent text-secondary"}>
-                    <Icon className={"text-secondary size-6"} icon="line-md:github-twotone"/>
+                    <Icon className={"text-secondary size-8"} icon="line-md:github-twotone"/>
                 </a>
                 <a href="https://www.linkedin.com/in/melanie-van-de-graaf/" target={"_blank"}
                    className={"px-0.5 hover:bg-transparent text-secondary"}>
-                    <Icon className={"text-secondary size-6"} icon="line-md:linkedin"/>
+                    <Icon className={"text-secondary size-8"} icon="line-md:linkedin"/>
                 </a>
             </div>
         </footer>
