@@ -1,16 +1,9 @@
 import type {Metadata} from "next";
 import {Noto_Sans, Noto_Sans_Mono} from "next/font/google";
 import "./globals.css";
-import React, {ComponentProps} from "react";
-import {
-    NavigationMenu,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList, navigationMenuTriggerStyle
-} from "@/components/ui/navigation-menu";
-import Link from "next/link";
-import {cn} from "@/lib/utils";
+import React from "react";
 import {Icon} from "@iconify/react";
+import NavBar from "@/components/nav-bar";
 
 const notoSans = Noto_Sans({
     variable: "--font-noto-sans",
@@ -31,23 +24,6 @@ export const metadata: Metadata = {
     }
 };
 
-function NavLink({className, ...props}: ComponentProps<typeof Link>) {
-    return <NavigationMenuItem>
-        <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link
-                className={cn(className, "bg-primary text-primary-foreground hover:bg-primary hover:text-primary-foreground/90")} {...props}/>
-        </NavigationMenuLink>
-    </NavigationMenuItem>;
-}
-
-function NavIcon({className, ...props}: React.AnchorHTMLAttributes<HTMLAnchorElement>) {
-    return <NavigationMenuItem>
-        <NavigationMenuLink asChild>
-            <a target={"_blank"} className={cn(className, "px-0.5 hover:bg-transparent text-secondary")} {...props}/>
-        </NavigationMenuLink>
-    </NavigationMenuItem>;
-}
-
 export default function RootLayout({children}: Readonly<{
     children: React.ReactNode;
 }>) {
@@ -56,26 +32,7 @@ export default function RootLayout({children}: Readonly<{
         <body
             className={`${notoSans.variable} ${notoSansMono.variable} antialiased bg-background text-foreground font-sans`}
         >
-        <NavigationMenu className={"bg-primary text-primary-foreground z-100"}>
-            <NavigationMenuList>
-                <NavLink href={"/"}>Melanie</NavLink>
-            </NavigationMenuList>
-            <NavigationMenuList>
-                <NavLink href={"/#about"}>About</NavLink>
-                <NavLink href={"/#skills"}>Skills</NavLink>
-                <NavLink href={"/#proficiencies"}>Proficiencies</NavLink>
-                <NavLink href={"/#projects"}>Projects</NavLink>
-                <NavLink href={"/#experience"}>Experience</NavLink>
-                <NavLink href={"/#contact"}>Contact</NavLink>
-                <NavIcon href="https://github.com/tenchi-of-darkness">
-                    <Icon className={"text-secondary size-6"} icon="line-md:github-twotone"/>
-                </NavIcon>
-
-                <NavIcon className={"mr-3"} href="https://www.linkedin.com/in/melanie-van-de-graaf/">
-                    <Icon className={"text-secondary size-6"} icon="line-md:linkedin"/>
-                </NavIcon>
-            </NavigationMenuList>
-        </NavigationMenu>
+        <NavBar/>
         {children}
         <footer className={"flex flex-col items-center mb-10"} id={"footer"}>
             <h1 className={"font-bold text-5xl text-center mt-12 w-fit mb-6"}>Contact me via</h1>

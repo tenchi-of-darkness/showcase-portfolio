@@ -17,7 +17,7 @@ export default function Home() {
                 <LandingSection/>
             </section>
 
-            <section className={cn(sectionClassName, "mt-15")} id={"about"}>
+            <section className={cn(sectionClassName, "pt-12")} id={"about"}>
                 <AboutSection/>
             </section>
 
