@@ -11,7 +11,7 @@ import {AboutSection} from "@/components/sections/about";
 export default function Home() {
     const sectionClassName = "min-h-dvh mb-10 mx-5";
     return (
-        <div className={"flex flex-col"}>
+        <div className={"flex flex-col px-5"}>
             <DigitalRain/>
             <section className={cn(sectionClassName, "mt-15")} id={"melanie"}>
                 <LandingSection/>
