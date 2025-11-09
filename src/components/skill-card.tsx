@@ -39,7 +39,7 @@ export function SkillCard({
                     {description}
                 </CardDescription>
             </CardHeader>
-            <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
+            <CardFooter className={"grid grid-cols-3 sm:grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
                 {tags.map((tag, i) => {
                     let subtitle = <></>
                     if (tag.projectNames) {
