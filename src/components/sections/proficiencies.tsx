@@ -5,10 +5,10 @@ import React from "react";
 export function ProficienciesSection() {
     return <>
         <h2 className={"font-bold text-5xl text-center mt-12"}> Proficiencies</h2>
-        <p className={"text-accent text-center mb-10"}>My confidence and experience with
+        <p className={"text-accent text-center mb-5"}>My confidence and experience with
             technologies</p>
         {/* rounded-r-none */}
-        <div className="grid grid-cols-2 grid-rows-5 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10">
             <SkillLevelItem title={"C# (ASP.NET Core)"} level={SkillLevel.Advanced}/>
             <SkillLevelItem title={"Javascript"} level={SkillLevel.Intermediate}/>
             <SkillLevelItem title={"Typescript"} level={SkillLevel.Advanced}/>
