@@ -34,7 +34,7 @@ export function HobbyCard({
                 {name}
             </CardTitle>
         </CardHeader>
-        <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
+        <CardFooter className={"grid grid-cols-2 sm:grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
             {tags.map((tag) => (
                 <TagHover
                     key={tag.name}

@@ -7,12 +7,12 @@ export function AboutSection() {
         <h2 className={"font-bold text-foreground text-5xl text-center"}>About <span
             className={"text-primary"}>Me</span></h2>
         <p className={"text-accent text-center"}>Get to know me</p>
-        <div className="flex justify-between p-5">
-            <div className="w-1/2 flex flex-col">
+        <div className="grid sm:grid-cols-2 sm:p-5 gap-y-5">
+            <div className="flex flex-col items-center sm:items-start row-2 sm:row-1">
                 <h2 className={"font-bold text-foreground text-5xl mb-3"}><span
                     className={"text-primary"}>My</span> story </h2>
-                <div className={"mr-50 text-sm"}>
-                    <p className={"mb-3"}>
+                <div className={"sm:mr-50 text-sm"}>
+                    <p className={"sm:w-[40dvw] mb-3"}>
                         Ever since I was little, I’ve been fascinated by how technology works.
                         When our family computer broke and we didn’t have much money to replace it, my dad and I
                         spent time fixing it together using old parts from family friends. I was too young to do
@@ -51,7 +51,7 @@ export function AboutSection() {
                 </div>
             </div>
 
-            <div className="w-1/2 flex flex-col">
+            <div className="flex flex-col">
                 <p className={"font-bold text-2xl text-center mb-4 mt-3"}>Hobbies and interests</p>
                 <div className="grid grid-cols-2 grid-rows-3 gap-2">
                     {hobbiesData.map((hobby, i) => (
