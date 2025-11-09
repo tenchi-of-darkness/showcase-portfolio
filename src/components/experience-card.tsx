@@ -39,13 +39,13 @@ export function ExperienceCard({
 
     return (
         <Card className={"p-0"}>
-            <div className={"p-5"}>
-                <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
-                    {titleString}
-                </p>
-            </div>
             <CardHeader className={"p-3 px-4 pb-0"}>
-                <CardTitle className={"text-foreground pt-0"}>
+                <div className={"pt-3"}>
+                    <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
+                        {titleString}
+                    </p>
+                </div>
+                <CardTitle className={"text-foreground"}>
                     <p className={"mb-2"}>
                         {name}
                     </p>
@@ -53,19 +53,18 @@ export function ExperienceCard({
                         {title}
                     </p>
                 </CardTitle>
-                <CardDescription className={"text-foreground pt-0"}>
+                <CardDescription className={"text-foreground"}>
                     {smallDescription}
                 </CardDescription>
             </CardHeader>
-            <CardFooter className={"grid grid-cols-4 gap-1 p-3 pb-2 pt-0"}>
-            </CardFooter>
-            <div className={"flex justify-center mb-2"}>
+            <CardFooter className={"flex justify-center sm:justify-start mb-2"}>
                 <ProjectDescriptionDialog
                     title={title}
                     projectName={name}
                     longDescription={longDescription}
                 />
-            </div>
+            </CardFooter>
+
         </Card>
     )
 }

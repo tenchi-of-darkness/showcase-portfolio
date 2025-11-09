@@ -9,27 +9,27 @@ import {SkillsSection} from "@/components/sections/skills";
 import {AboutSection} from "@/components/sections/about";
 
 export default function Home() {
-    const sectionClassName = "min-h-dvh mb-10 mx-5";
+    const sectionClassName = "mb-10 mx-5";
     return (
         <div className={"flex flex-col sm:px-5"}>
             <DigitalRain/>
-            <section className={cn(sectionClassName, "mt-15")} id={"melanie"}>
+            <section className={cn(sectionClassName, "sm:min-h-dvh mt-15")} id={"melanie"}>
                 <LandingSection/>
             </section>
 
-            <section className={cn(sectionClassName, "pt-12")} id={"about"}>
+            <section className={cn(sectionClassName, "sm:min-h-dvh pt-12")} id={"about"}>
                 <AboutSection/>
             </section>
 
-            <section className={sectionClassName} id={"skills"}>
+            <section className={cn(sectionClassName, "sm:min-h-dvh")} id={"skills"}>
                 <SkillsSection/>
             </section>
 
-            <section className={sectionClassName} id={"proficiencies"}>
+            <section className={cn(sectionClassName, "sm:min-h-dvh")} id={"proficiencies"}>
                 <ProficienciesSection/>
             </section>
 
-            <section className={sectionClassName} id={"projects"}>
+            <section className={cn(sectionClassName, "sm:min-h-dvh")} id={"projects"}>
                 <ProjectsSection/>
             </section>
 

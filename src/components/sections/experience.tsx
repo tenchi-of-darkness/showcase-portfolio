@@ -4,8 +4,8 @@ import React from "react";
 export function ExperienceSection() {
     return <>
         <h2 className={"font-bold text-5xl text-center mt-12"}>Experience</h2>
-        <p className={"text-accent text-center mb-10"}>My educational journey and experiences so far</p>
-        <div className="grid grid-cols-2 gap-10">
+        <p className={"text-accent text-center mb-5"}>My educational journey and experiences so far</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <ExperienceCard
                 variant={ExperienceCardVariant.Work}
                 title={"Experience"}
