@@ -29,14 +29,14 @@ export interface ProjectCardProps {
 export function ProjectCard(props: Readonly<ProjectCardProps>) {
 
     return (
-        <Card className={"p-0 flex flex-col justify-between"} id={props.projectName}>
-            <div className={"p-5"}>
-                <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
-                    {props.projectName}
-                </p>
-            </div>
+        <Card className={"p-0 flex flex-col"} id={props.projectName}>
             <CardHeader className={"p-3 px-4 pb-0"}>
 
+                <div className={"pt-2"}>
+                    <p className={"bg-tag text-tag-foreground w-fit px-2 rounded-2xl"}>
+                        {props.projectName}
+                    </p>
+                </div>
                 <CardTitle className={"text-foreground pt-0"}>
                     <h2 className={"mb-2 text-2xl font-bold"}>
                         {props.projectName}

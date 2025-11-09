@@ -5,8 +5,8 @@ import projectsData from "@/data/projects.json"
 export function ProjectsSection() {
     return <>
         <h2 className={"font-bold text-5xl text-center mt-12"}>Projects</h2>
-        <p className={"text-accent text-center mb-10"}>My projects so far</p>
-        <div className="grid grid-cols-2 gap-10">
+        <p className={"text-accent text-center mb-5"}>My projects so far</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {projectsData.map((item, i) => (
                 <ProjectCard
                     key={i}
