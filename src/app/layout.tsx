@@ -34,7 +34,7 @@ export default function RootLayout({children}: Readonly<{
         >
         <NavBar/>
         {children}
-        <footer className={"flex flex-col items-center mb-10"} id={"footer"}>
+        <footer className={"flex flex-col items-center mb-10"} id={"contact"}>
             <h1 className={"font-bold text-5xl text-center mt-12 w-fit mb-6"}>Contact me via</h1>
             <div className={"flex flex-row justify-center"}>
                 <a href="https://github.com/tenchi-of-darkness" target={"_blank"}
