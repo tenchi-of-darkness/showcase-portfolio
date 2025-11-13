@@ -30,7 +30,7 @@ export default function RootLayout({children}: Readonly<{
     return (
         <html lang="en">
         <body
-            className={`${notoSans.variable} ${notoSansMono.variable} antialiased bg-background text-foreground font-sans`}
+            className={`${notoSans.variable} ${notoSansMono.variable} antialiased bg-background text-foreground font-sans overflow-x-hidden`}
         >
         <NavBar/>
         {children}

@@ -35,7 +35,7 @@ function NavBar() {
     const [isOpen, setIsOpen] = React.useState(false);
 
     return (
-        <header className="bg-primary h-14 md:h-10 text-primary-foreground fixed top-0 z-50 w-dvw">
+        <header className="bg-primary h-14 sm:h-10 text-primary-foreground fixed top-0 z-50 w-dvw">
             <div className="flex items-center h-full justify-between">
                 {/* Desktop Menu */}
                 <NavigationMenu className="hidden md:flex gap-x-4">
