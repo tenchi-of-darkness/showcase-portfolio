@@ -15,7 +15,7 @@ spec:
         portfolio.application: "frontend"
     spec:
       containers:
-        - image: "harbor.melanievandegraaf.nl/portfolio/frontend:latest"
+        - image: "ghcr.io/tenchi-of-darkness/showcase-portfolio:latest"
           imagePullPolicy: Always
           name: frontend
           ports:

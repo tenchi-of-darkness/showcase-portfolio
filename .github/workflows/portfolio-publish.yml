@@ -5,13 +5,16 @@ on:
     branches: [ "main" ]
     
 env:
-  REGISTRY: harbor.melanievandegraaf.nl
-  IMAGE_NAME: portfolio/frontend
+  REGISTRY: ghcr.io
+  IMAGE_NAME: tenchi-of-darkness/showcase-portfolio
 
 jobs:
   docker-image:
     name: "Build and Push the docker image"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -21,8 +24,8 @@ jobs:
         uses: docker/login-action@343f7c4344506bcbf9b4de18042ae17996df046d # v3.0.0
         with:
           registry: ${{ env.REGISTRY }}
-          username: ${{ secrets.HARBOR_USERNAME }}
-          password: ${{ secrets.HARBOR_TOKEN }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push Docker image
         id: build-and-push
         uses: docker/build-push-action@0565240e2d4ab88bba5387d719585280857ece09 # v5.0.0
@@ -48,10 +51,10 @@ jobs:
       - name: Deploy to the Kubernetes cluster
         uses: azure/k8s-deploy@v5
         with:
-          namespace: portfolio
+          namespace: showcase-portfolio
           manifests: |
             kubernetes/frontend-deployment.yaml
-            kubernetes/frontend-ingress.yaml
+            kubernetes/frontend-httproute.yaml
             kubernetes/frontend-service.yaml
           images: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
