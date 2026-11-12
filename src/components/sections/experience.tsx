@@ -20,6 +20,13 @@ export function ExperienceSection() {
                 smallDescription={"Bachelor"}
                 longDescription={"Fullstack developer, choice Software, minor Iot(Industry 4.0) and Frontend development as extra course"}
             />
+             <ExperienceCard
+                variant={ExperienceCardVariant.Work}
+                title={"Experience"}
+                name={"CBS"}
+                smallDescription={"A large and Distributed architecture, backend in C#"}
+                longDescription={"Backend developer, A Distributed architecture, backend in C#, Researched, tested the migration of legacy applications from .NET Framework to .NET 10, delivering proof-of-concepts and technical recommendations"}
+            />
         </div>
     </>;
 }

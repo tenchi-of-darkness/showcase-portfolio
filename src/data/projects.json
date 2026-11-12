@@ -97,8 +97,8 @@
       },
       {
         "name": "Figma",
-        "title": "Database",
-        "description": "Read and write database for implementing CQRS pattern",
+        "title": "Design Tool",
+        "description": "Iterative design",
         "subtitle": ""
       },
       {
@@ -149,8 +149,8 @@
       },
       {
         "name": "Figma",
-        "title": "Database",
-        "description": "Read and write database for implementing CQRS pattern",
+        "title": "Design Tool",
+        "description": "Iterative design",
         "subtitle": ""
       },
       {
@@ -175,6 +175,52 @@
         "name": "Tailwind",
         "title": "Styling",
         "description": "",
+        "subtitle": ""
+      }
+    ]
+  },
+  {
+    "title": "Modernization of messaging solutions and the .NET Framework",
+    "client": "CBS",
+    "smallDescription": "Researched and tested the migration of legacy applications from .NET Framework to .NET 10, delivering proof-of-concepts and technical recommendations.",
+    "longDescription": "Researched the migration of legacy applications from .NET Framework to .NET 10 by conducting two proof-of-concepts, including an actual migration. Based on the results, I produced an advisory report outlining my findings and recommendations. During this project, I gained experience with C#, .NET, NServiceBus, RabbitMQ, and Azure DevOps, while strengthening my skills in independent research, technical decision making, and communicating technical findings.",
+    "gitUrl": null,
+    "demoUrl": "",
+    "tags": [
+      {
+        "name": "Azure DevOps",
+        "title": "Deployment",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Prototyping",
+        "title": "Design",
+        "description": "",
+        "subtitle": ""
+      },
+      {
+        "name": "Rabbit MQ",
+        "title": "Message bus",
+        "description": "Used for messaging between services",
+        "subtitle": ""
+      },
+      {
+        "name": "C#",
+        "title": "ASP.CORE 8+10",
+        "description": "Microservice architecture ",
+        "subtitle": ""
+      },
+      {
+        "name": "DotNet",
+        "title": "DotNet Framework",
+        "description": "version 4.6.2 and up",
+        "subtitle": ""
+      },
+      {
+        "name": "NServiceBus",
+        "title": "Message bus",
+        "description": "Used for messaging between services",
         "subtitle": ""
       }
     ]

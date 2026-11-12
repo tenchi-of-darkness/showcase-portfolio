@@ -7,6 +7,7 @@ export function ProficienciesSection() {
         <h2 className={"font-bold text-5xl text-center mt-12"}> Proficiencies</h2>
         <p className={"text-accent text-center mb-5"}>My confidence and experience with
             technologies</p>
+        <p className={"text-accent text-center mb-5"}>Note: Skill levels reflect the time invested in learning and applying each skill, not absolute mastery. A more filled bar represents the most time invested relative to my other skills.</p>
         {/* rounded-r-none */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10">
             <SkillLevelItem title={"C# (ASP.NET Core)"} level={SkillLevel.Advanced}/>
@@ -17,7 +18,7 @@ export function ProficienciesSection() {
             <SkillLevelItem title={"HTML/CSS"} level={SkillLevel.Intermediate}/>
             <SkillLevelItem title={"IaC (Terraform)"} level={SkillLevel.Beginner}/>
             <SkillLevelItem title={"Kubernetes"} level={SkillLevel.Intermediate}/>
-            <SkillLevelItem title={"GitOps (ArgoCD)"} level={SkillLevel.Beginner}/>
+            <SkillLevelItem title={"GitOps (ArgoCD)"} level={SkillLevel.Intermediate}/>
             <SkillLevelItem title={"Database (PostgreSQL, MySQL)"} level={SkillLevel.Advanced}/>
         </div>
     </>;
