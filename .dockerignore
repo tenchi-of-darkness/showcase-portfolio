@@ -1,4 +1,14 @@
 .idea
+.git
+.github
+.vs
+.vscode
+kubernetes
+**/*.md
+Dockerfile
+.dockerignore
+.gitignore
+.pnpm-store
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
